@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <top>
+            <ToolBar prefHeight="139.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+              <items>
+                  <TextField alignment="CENTER" style="-fx-background-color: teal;" text="Super User">
+                     <font>
+                        <Font size="24.0" />
+                     </font></TextField>
+                  <AmbientLight color="CHARTREUSE" lightOn="true" />
+              </items>
+            </ToolBar>
+         </top>
+         <bottom>
+            <Button mnemonicParsing="false" text="HOME" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField text="What do you wish to do:" />
+                  <Button mnemonicParsing="false" text="Create new warehouse" />
+                  <Button mnemonicParsing="false" text="Create new store" />
+                  <Button mnemonicParsing="false" text="Link store to warehouse" />
+                  <Button mnemonicParsing="false" text="Create warehouse administrator" />
+                  <Button mnemonicParsing="false" text="View warehouse" />
+                  <Button mnemonicParsing="false" text="View store" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+    <Button mnemonicParsing="false" text="&lt;-- back" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="530.0" />
+         </BorderPane.margin></Button>
+   </top>
+</BorderPane>
