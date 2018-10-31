@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -54,7 +55,10 @@
                      </GridPane.margin>
                      <opaqueInsets>
                         <Insets />
-                     </opaqueInsets></Button>
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow height="11.67" radius="4.5575" width="8.56" />
+                     </effect></Button>
                </children>
                <opaqueInsets>
                   <Insets />
