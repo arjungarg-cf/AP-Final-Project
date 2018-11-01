@@ -6,19 +6,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
             <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" text="&lt;--Back" />
-                  <TextField text="Browse categories">
+                  <TextField alignment="CENTER" text="Browse categories">
                      <HBox.margin>
-                        <Insets left="150.0" top="60.0" />
+                        <Insets left="100.0" top="30.0" />
                      </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
                   </TextField>
                </children>
             </HBox>
