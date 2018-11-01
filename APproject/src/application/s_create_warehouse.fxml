@@ -1,72 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+            <HBox prefHeight="144.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" text="&lt;-- Back" />
-                  <TextField text="Create new warehouse">
+                  <Label text="Create New Warehouse" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
                      <HBox.margin>
-                        <Insets left="140.0" top="30.0" />
+                        <Insets left="-70.0" top="85.0" />
                      </HBox.margin>
-                  </TextField>
+                  </Label>
                </children>
             </HBox>
          </top>
-         <left>
-            <SplitPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <items>
-                  <TableView prefHeight="448.0" prefWidth="198.0">
-                    <columns>
-                      <TableColumn prefWidth="198.0" text="Field" />
-                    </columns>
-                  </TableView>
-               </items>
-            </SplitPane>
-         </left>
          <center>
-            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER">
-              <tabs>
-                <Tab text="Fill Detail">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                  </content>
-                </Tab>
-                <Tab text="Read me :)">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <SplitPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <GridPane layoutX="14.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="313.0" prefWidth="568.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="21.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="359.0" minHeight="0.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="405.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="405.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="405.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="405.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="405.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
                            <children>
-                              <TextArea layoutX="3.0" layoutY="5.0" prefHeight="414.0" prefWidth="400.0" text="ID: Can contain numbers or alphabets&#10;&#10;Name: of the warehouse only contains String type entries&#10;&#10;Data: &#10;&#10;Warehouse Administrator: The ID and name of the Warehouse administrator has to be entered.&#10;&#10;Wares:  " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label text="ID " />
+                              <Label text="Name" GridPane.rowIndex="1" />
+                              <Label text="Data" GridPane.rowIndex="2" />
+                              <Label text="Administrator" GridPane.rowIndex="3" />
+                              <Label text="Linked warehouse" GridPane.rowIndex="4" />
+                              <Label text="Maximum items" GridPane.rowIndex="5" />
+                              <TextField opacity="0.4" text="ID of store" GridPane.columnIndex="1" />
+                              <TextField opacity="0.52" text="Name of store" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField opacity="0.57" text="Store Administrator" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <MenuButton mnemonicParsing="false" opacity="0.47" text="List of warehouses" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                                </items>
+                              </MenuButton>
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
                            </children>
-                        </AnchorPane>
-                  </content>
-                </Tab>
-              </tabs>
-            </TabPane>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </GridPane>
+                        <Button layoutX="272.0" layoutY="363.0" mnemonicParsing="false" text="Create" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
          </center>
          <bottom>
-            <HBox prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="Create">
+                  <Button mnemonicParsing="false" text="HOME">
                      <HBox.margin>
-                        <Insets left="270.0" />
+                        <Insets left="270.0" top="10.0" />
                      </HBox.margin>
                   </Button>
                </children>
@@ -75,20 +94,6 @@
       </BorderPane>
    </center>
    <bottom>
-      <HBox prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
-         <children>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" text="HOME">
-               <HBox.margin>
-                  <Insets left="270.0" />
-               </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="DEFAULT" />
-               </cursor>
-            </Button>
-         </children>
-         <BorderPane.margin>
-            <Insets />
-         </BorderPane.margin>
-      </HBox>
+      <HBox prefHeight="48.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

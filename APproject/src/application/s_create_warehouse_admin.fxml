@@ -9,26 +9,30 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <BorderPane prefHeight="516.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+            <HBox prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" text="&lt;--Back" />
-                  <TextField prefHeight="27.0" prefWidth="215.0" text="Create warehouse administrator">
+                  <Label text="Create Warehouse admin" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="140.0" top="30.0" />
+                        <Insets left="-70.0" top="70.0" />
                      </HBox.margin>
-                  </TextField>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
                </children>
             </HBox>
          </top>
          <bottom>
-            <HBox prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="Create">
+                  <Button mnemonicParsing="false" prefWidth="63.0" text="Create">
                      <HBox.margin>
                         <Insets left="270.0" />
                      </HBox.margin>
@@ -37,14 +41,14 @@
             </HBox>
          </bottom>
          <center>
-            <GridPane BorderPane.alignment="CENTER">
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="228.0" prefWidth="485.0" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="324.0" minHeight="0.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="324.0" minHeight="0.0" prefHeight="122.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="281.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -58,7 +62,7 @@
                         <Insets left="100.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label text="Login ID">
+                  <Label text="Enter Login ID">
                      <GridPane.margin>
                         <Insets left="100.0" />
                      </GridPane.margin>
@@ -68,18 +72,18 @@
                   <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
                <BorderPane.margin>
-                  <Insets right="50.0" />
+                  <Insets right="50.0" top="-20.0" />
                </BorderPane.margin>
             </GridPane>
          </center>
       </BorderPane>
    </center>
    <bottom>
-      <HBox prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" text="HOME">
                <HBox.margin>
-                  <Insets left="270.0" />
+                  <Insets left="270.0" top="10.0" />
                </HBox.margin>
             </Button>
          </children>
