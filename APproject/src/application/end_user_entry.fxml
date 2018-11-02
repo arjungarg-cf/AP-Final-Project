@@ -2,71 +2,106 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <BorderPane prefHeight="516.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+            <HBox prefHeight="133.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <TextField alignment="CENTER" text="End User">
+                  <Button mnemonicParsing="false" text="&lt;--Back" />
+                  <Label text="End user" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="160.0" top="30.0" />
+                        <Insets left="-70.0" top="80.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="Lucida Bright Regular" size="25.0" />
+                        <Font size="40.0" />
                      </font>
-                  </TextField>
+                  </Label>
+                  <Label text="User ID">
+                     <HBox.margin>
+                        <Insets left="380.0" />
+                     </HBox.margin>
+                  </Label>
                </children>
             </HBox>
          </top>
-         <center>
-            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <HBox prefHeight="84.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField alignment="CENTER" prefHeight="78.0" prefWidth="600.0" text="Choose any of the following">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </TextField>
-                  <MenuButton mnemonicParsing="false" text="Browse..">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
-                      <MenuItem mnemonicParsing="false" text="Action 2" />
-                    </items>
-                     <VBox.margin>
-                        <Insets left="250.0" top="40.0" />
-                     </VBox.margin>
-                  </MenuButton>
-                  <Button mnemonicParsing="false" text="Check availability">
-                     <VBox.margin>
-                        <Insets left="230.0" top="20.0" />
-                     </VBox.margin>
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="95.0" text="Search">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Search">
-                     <VBox.margin>
-                        <Insets left="265.0" top="20.0" />
-                     </VBox.margin>
+                  <Button mnemonicParsing="false" text="Check Availibility">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
                   </Button>
-                  <MenuButton mnemonicParsing="false" text="Sort by..">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
-                      <MenuItem mnemonicParsing="false" text="Action 2" />
-                    </items>
-                     <VBox.margin>
-                        <Insets left="250.0" top="20.0" />
-                     </VBox.margin>
-                  </MenuButton>
                </children>
-            </VBox>
+            </HBox>
+         </bottom>
+         <center>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="283.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="324.0" minHeight="0.0" prefHeight="122.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="281.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Sub-category" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Item" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Category">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <BorderPane.margin>
+                  <Insets right="50.0" top="-20.0" />
+               </BorderPane.margin>
+            </GridPane>
          </center>
       </BorderPane>
    </center>
+   <bottom>
+      <HBox prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="HOME">
+               <HBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Logout">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>

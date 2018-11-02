@@ -2,7 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.TilePane?>
@@ -11,21 +14,32 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_controller">
    <center>
-      <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <BorderPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <top>
             <HBox prefHeight="183.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <TextField prefHeight="68.0" prefWidth="233.0" text="WELCOME">
-                     <HBox.margin>
-                        <Insets bottom="70.0" left="170.0" right="170.0" top="70.0" />
-                     </HBox.margin>
+                  <Label text="WELCOME" textFill="#f8f8f8">
                      <font>
-                        <Font name="System Bold" size="36.0" />
+                        <Font size="36.0" />
                      </font>
-                  </TextField>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="181.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="250.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../../../../Downloads/ARJUN%20LOGO%201.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </HBox>
          </top>
@@ -40,27 +54,42 @@
                      <children>
                         <TilePane prefHeight="207.0" prefWidth="600.0">
                            <children>
-                              <Button mnemonicParsing="false" text="Store Administrator">
-                                 <TilePane.margin>
-                                    <Insets top="30.0" />
-                                 </TilePane.margin>
-                              </Button>
-                              <Button mnemonicParsing="false" onAction="#gosuper" text="Super User">
-                                 <TilePane.margin>
-                                    <Insets top="30.0" />
-                                 </TilePane.margin>
-                              </Button>
                               <Button mnemonicParsing="false" text="End User">
                                  <TilePane.margin>
-                                    <Insets top="60.0" />
+                                    <Insets top="30.0" />
                                  </TilePane.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
                               </Button>
                               <Button mnemonicParsing="false" text="Warehouse administrator">
                                  <TilePane.margin>
-                                    <Insets left="20.0" top="30.0" />
+                                    <Insets top="30.0" />
                                  </TilePane.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#gosuper" text="Super User">
+                                 <TilePane.margin>
+                                    <Insets top="40.0" />
+                                 </TilePane.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Store Administrator">
+                                 <TilePane.margin>
+                                    <Insets top="40.0" />
+                                 </TilePane.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
                               </Button>
                            </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
                         </TilePane>
                      </children>
                   </VBox>
