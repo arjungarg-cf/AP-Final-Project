@@ -1,7 +1,7 @@
 package application;
 import java.io.IOException;
 
-import employee.main;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -17,6 +17,7 @@ public class Main extends Application {
 		this.primaryStage=primaryStage;
 		this.primaryStage.setTitle("Superstore");
 		showMainView();
+		showsuperfromwelcome();
 	}
 	
 	private void showMainView() throws IOException
