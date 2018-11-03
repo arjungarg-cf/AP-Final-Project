@@ -5,6 +5,8 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,14 +14,25 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <VBox prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="150.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="470.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../../../../Downloads/ARJUN%20LOGO%201.jpg" />
+               </image>
+            </ImageView>
             <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="85.0" text="&lt;-- Back">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
             </Button>
          </children>
       </VBox>

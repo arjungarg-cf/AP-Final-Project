@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="&lt;-- Back" />
+            <Label text="Login ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="750.0" top="-30.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="21.0" prefWidth="107.0" text="Linked Warehouse">
+               <VBox.margin>
+                  <Insets left="700.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Update a Subitem" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="10.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox prefHeight="103.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Home">
+               <VBox.margin>
+                  <Insets left="380.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Category">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="41.0" layoutY="27.0" prefHeight="90.0" prefWidth="741.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="202.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="539.0" minWidth="10.0" prefWidth="539.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="New Name:" GridPane.rowIndex="1" />
+                              <Label text="Select Category" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Button layoutX="734.0" layoutY="117.0" mnemonicParsing="false" text="Edit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Sub-Catergory">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="41.0" layoutY="27.0" prefHeight="140.0" prefWidth="738.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="41.0" minHeight="4.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Select Category:" />
+                              <Label text="New name of Sub-category" GridPane.rowIndex="2" />
+                              <TextField prefHeight="60.0" prefWidth="368.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                              <Label text="Select Sub-category" GridPane.rowIndex="1" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Button layoutX="731.0" layoutY="154.0" mnemonicParsing="false" text="Edit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Item">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="814.0">
+                     <children>
+                        <GridPane layoutX="63.0" layoutY="26.0" prefHeight="198.0" prefWidth="727.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Enter Category" />
+                              <Label text="Enter Sub-category" GridPane.rowIndex="1" />
+                              <Label text="Select Item" GridPane.rowIndex="2" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="New Cost" GridPane.rowIndex="4" />
+                              <Label text="New Quantity" GridPane.rowIndex="5" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="New Name:" GridPane.rowIndex="3" />
+                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Button layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
