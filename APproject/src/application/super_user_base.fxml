@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.super_user_controller">
    <top>
       <VBox prefHeight="140.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="&lt;-- Back" />
+            <Button mnemonicParsing="false" onAction="#goback" text="&lt;-- Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -32,12 +32,12 @@
    <bottom>
       <VBox prefHeight="90.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Home">
+            <Button mnemonicParsing="false" onAction="#goback" text="Home">
                <VBox.margin>
                   <Insets left="320.0" top="20.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Logout">
+            <Button mnemonicParsing="false" onAction="#goback" text="Logout">
                <VBox.margin>
                   <Insets left="400.0" top="-32.0" />
                </VBox.margin>
@@ -48,32 +48,32 @@
    <center>
       <TilePane maxHeight="-Infinity" maxWidth="-Infinity" prefColumns="2" prefHeight="334.0" prefRows="3" prefTileHeight="70.0" prefTileWidth="350.0" prefWidth="814.0" BorderPane.alignment="CENTER">
          <children>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="51.0" prefWidth="314.0" text="Create new store">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gocreatestore" prefHeight="51.0" prefWidth="314.0" text="Create new store">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="51.0" prefWidth="271.0" text="View Store">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goviewstore" prefHeight="51.0" prefWidth="271.0" text="View Store">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="51.0" prefWidth="311.0" text="Create Warehouse">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gocreatewarehouse" prefHeight="51.0" prefWidth="311.0" text="Create Warehouse">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="51.0" prefWidth="282.0" text="View Warehouse">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goviewwarehouse" prefHeight="51.0" prefWidth="282.0" text="View Warehouse">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="51.0" prefWidth="308.0" text="Create Warehouse Admin">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gocreatawarehouseadmin" prefHeight="51.0" prefWidth="308.0" text="Create Warehouse Admin">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Link Store to Warehouse">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#golink" text="Link Store to Warehouse">
                <TilePane.margin>
                   <Insets />
                </TilePane.margin>

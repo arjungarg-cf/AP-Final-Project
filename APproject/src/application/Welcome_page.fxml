@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_controller">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_controller">
    <top>
       <VBox prefHeight="132.0" prefWidth="774.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
@@ -33,22 +33,22 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="167.0" text="Super User">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gosuper" prefHeight="43.0" prefWidth="167.0" text="Super User">
                <VBox.margin>
                   <Insets left="310.0" top="20.0" />
                </VBox.margin>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="166.0" text="Warehouse Admin">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gowarehouse" prefHeight="48.0" prefWidth="166.0" text="Warehouse Admin">
                <VBox.margin>
                   <Insets left="310.0" top="20.0" />
                </VBox.margin>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="44.0" prefWidth="167.0" text="Store Admin">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gostore" prefHeight="44.0" prefWidth="167.0" text="Store Admin">
                <VBox.margin>
                   <Insets left="310.0" top="20.0" />
                </VBox.margin>
             </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="169.0" text="End User">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goenduser" prefHeight="48.0" prefWidth="169.0" text="End User">
                <VBox.margin>
                   <Insets left="310.0" top="20.0" />
                </VBox.margin>
