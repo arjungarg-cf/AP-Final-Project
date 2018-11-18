@@ -201,6 +201,39 @@ public class Main extends Application {
 		mainLayout.setCenter(super1);
 	}
 	
+	//functions of warehouse admin create
+	
+	public static void gobackfromhere() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("super_user_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void create_warehouse_admin_after() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_warehouse_admin_is_created.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of afterwarehouse admin is created controller
+	
+	public static void continue_creating_warehouse_admin() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("s_create_warehouse_admin.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void gobackfromthisplace() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("s_create_warehouse_admin.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
 	
 	public static void main(String[] args) {
 		launch(args);
