@@ -235,6 +235,115 @@ public class Main extends Application {
 		mainLayout.setCenter(super1);
 	}
 	
+	// functions of warehouse manager:
+	
+	//public static void 
+	
+	public static void w_updateitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_updateitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void w_manageEOQ() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_manageEOQ.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void w_delete_subitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_deletesubitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void w_additems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_additems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void gobackfromwarehousebase() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("Welcome_page.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	
+	// functions of warehouse update items:
+	public static void gobackfrom_w_updateitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("warehouse_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	//functions of warehouse administrator manage EOQ:
+	public static void gobackfrom_manage() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("warehouse_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of warehouse admin delete subitems:
+	public static void gobackfrom_delete() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("warehouse_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void go_delete_button() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_warehouse_admin_deletes.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of after warehouse deletes:
+	
+	public static void go_continuedeleting() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_deletesubitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	
+	//functions of warehouse adds new subitems:
+	public static void go_add_subitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_warehouse_admin_add_new_subitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of after adding subitems for warehouse administrator:
+	
+	public static void go_continueadding() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_additems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
