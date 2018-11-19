@@ -16,7 +16,7 @@ public class Store implements Superstore {
 	}
 	
 //	String getware()
-//	{
+//	{	
 //		return this.LinkedWare_string;
 //	}
 	
