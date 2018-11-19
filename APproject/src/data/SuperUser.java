@@ -22,9 +22,10 @@ public class SuperUser extends SuperSuper {
 		W.Wares.add(W);
 	}
 
-	void CreateStore(StoreAdministrator s,Warehouse w,String n,int m) {
-		Store S=new Store(s,w,n,m);
+	void CreateStore(StoreAdministrator s,String id,Warehouse w,String n,int m) {
+		Store S=new Store(s, id, n, w, m);
 		Stores.add(S);
 		
 	}
+	
 }
