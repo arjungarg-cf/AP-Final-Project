@@ -12,6 +12,6 @@ public class WarehouseAdministrator extends Warehouse {
 	{
 		return this.Password;
 	}
-
+//additems daaliyo
 
 }

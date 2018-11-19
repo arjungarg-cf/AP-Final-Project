@@ -1,6 +1,6 @@
 package data;
 
-public class EndUser extends SuperEnd{
+public class EndUser extends Store{
 
 private String LoginID,Password;
 	

@@ -1,17 +1,18 @@
 package data;
 
 public class Store implements Superstore {
-	StoreAdministrator Admin;
+	private StoreAdministrator Admin;
 //	private String LinkedWare_string;
-	Warehouse LinkedWare_obj;
+	private Warehouse LinkedWare_obj;
 	private final int MaxItems;
-	
+	static ArrayList<>
 	//CONSTRUCTOR
-	Store(StoreAdministrator sa,Warehouse w,int max){
+	Store(StoreAdministrator sa,Warehouse w,String s,int max){
 		this.Admin=sa;
 		this.LinkedWare_obj=w;
 //		this.LinkedWare_string=w.getname();
 		this.MaxItems=max;
+		this.name=s;
 	}
 	
 //	String getware()
@@ -22,6 +23,11 @@ public class Store implements Superstore {
 	int getmaxitems()
 	{
 		return this.MaxItems;
+	}
+	
+	String getname()
+	{
+		return this.name;
 	}
 	
 
