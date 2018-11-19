@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.store_admin_base_controller">
    <top>
       <VBox prefHeight="160.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="&lt;-- Back" />
+            <Button mnemonicParsing="false" onAction="#goback" text="&lt;-- Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -38,12 +38,12 @@
    <bottom>
       <VBox prefHeight="103.0" prefWidth="814.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Home">
+            <Button mnemonicParsing="false" onAction="#gohome" text="Home">
                <VBox.margin>
                   <Insets left="320.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Logout">
+            <Button mnemonicParsing="false" onAction="#gohome" text="Logout">
                <VBox.margin>
                   <Insets left="400.0" top="-32.0" />
                </VBox.margin>
@@ -54,22 +54,22 @@
    <center>
       <TilePane prefColumns="2" prefHeight="287.0" prefRows="3" prefTileHeight="70.0" prefTileWidth="300.0" prefWidth="814.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Add Subitems ">
+            <Button mnemonicParsing="false" onAction="#adddd" text="Add Subitems ">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Update Subitems">
+            <Button mnemonicParsing="false" onAction="#goupdateitems" text="Update Subitems">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Delete Subitems">
+            <Button mnemonicParsing="false" onAction="#deletesubitems" text="Delete Subitems">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Manage EOQ">
+            <Button mnemonicParsing="false" onAction="#manageEOQ" text="Manage EOQ">
                <font>
                   <Font size="24.0" />
                </font>

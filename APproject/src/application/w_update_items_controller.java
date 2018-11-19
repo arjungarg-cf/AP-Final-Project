@@ -19,6 +19,11 @@ private Main ma;
 	{
 		ma.gobackfrom_w_updateitems();
 	}
+	@FXML
+	private void continueedits() throws IOException
+	{
+		ma.goeditingfrom_warehouse();
+	}
 	
 	
 

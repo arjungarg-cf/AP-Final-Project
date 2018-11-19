@@ -3,12 +3,15 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import application.Main;
 
-public class after_warehouse_admin_adds_subitems_controller {
-	private Main ma;
+
+public class after_store_admin_deletes_subitem_controller {
+private Main ma;
+	
+
 	@FXML
-	private void gocontinueadding() throws IOException
+	private void gocontinuedeleting() throws IOException
 	{
-		ma.go_continueadding();
+		ma.go_continuedeleting_store();
 	}
 
 	@FXML
@@ -17,4 +20,6 @@ public class after_warehouse_admin_adds_subitems_controller {
 		ma.go_back_to_welcome();
 	}
 	
+	
+
 }

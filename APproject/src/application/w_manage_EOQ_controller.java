@@ -20,7 +20,11 @@ private Main ma;
 	{
 		ma.gobackfrom_manage();
 	}
-	
+	@FXML
+	private void lastbutton() throws IOException
+	{
+		ma.continuelastbutton();
+	}
 	
 
 }

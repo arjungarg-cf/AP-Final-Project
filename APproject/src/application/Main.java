@@ -284,11 +284,26 @@ public class Main extends Application {
 		BorderPane super1 = loader.load();
 		mainLayout.setCenter(super1);
 	}
+	public static void goeditingfrom_warehouse() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_warehouse_Admin_edits.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
 	//functions of warehouse administrator manage EOQ:
 	public static void gobackfrom_manage() throws IOException
 	{
 		FXMLLoader loader= new FXMLLoader();
 		loader.setLocation(Main.class.getResource("warehouse_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void continuelastbutton() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_warehouse_admin_edits_EOQ.fxml"));
 		BorderPane super1 = loader.load();
 		mainLayout.setCenter(super1);
 	}
@@ -338,6 +353,160 @@ public class Main extends Application {
 		BorderPane super1 = loader.load();
 		mainLayout.setCenter(super1);
 	}
+	
+	//functions of after warehouse admin edits items:
+	
+	public static void go_continueedits() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_updateitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	//functions of after warhouse admin checks EOQ:
+	
+	public static void go_continuechecking() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("w_manageEOQ.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of store manager base page:
+	
+	public static void s_updateitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_update_items.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void s_manageEOQ() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_manageEOQ.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void s_delete_subitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_deletesubitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void s_additems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_additems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void gobackfromstoreadminbase() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("Welcome_page.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	
+	//functions of store manager updates items:
+	public static void gobackfrom_store_admin_updateitems() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	}
+	public static void goeditingfrom_store() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_store_Admin_edits.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	//fucntions of after stroe admin updates:
+	
+	public static void go_store_edits() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_update_items.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	//functions of manage EOQ for store:
+	public static void gobackfrom_store_manager() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	
+	//functions of store manager delete subitems:
+	public static void gobackfrom_delete_store_admin() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	public static void go_delete_button_store() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_store_admin_deletes_subitem.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	//functions of after store admin deletes subitem:
+	public static void go_continuedeleting_store() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_deletesubitems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	//functions of store admin additems:
+	public static void gobackfrom_delete_store() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_manager_base.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	public static void go_add_subitems_store() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	//functions of after store admin adds 
+	public static void go_continueadding_storee() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader();
+		loader.setLocation(Main.class.getResource("store_admin_additems.fxml"));
+		BorderPane super1 = loader.load();
+		mainLayout.setCenter(super1);
+	
+	}
+	
+	
+	
 	
 	
 	

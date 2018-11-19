@@ -14,11 +14,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.store_admin_delete_items_controller">
    <top>
       <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="&lt;-- Back" />
+            <Button mnemonicParsing="false" onAction="#goback" text="&lt;-- Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -43,7 +43,7 @@
    <bottom>
       <VBox prefHeight="103.0" prefWidth="814.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" text="Home">
+            <Button mnemonicParsing="false" onAction="#gohome" text="Home">
                <VBox.margin>
                   <Insets left="380.0" top="30.0" />
                </VBox.margin>
@@ -71,7 +71,7 @@
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="332.0" layoutY="103.0" mnemonicParsing="false" text="Delete" />
+                        <Button layoutX="332.0" layoutY="103.0" mnemonicParsing="false" onAction="#delete_button" text="Delete" />
                      </children>
                   </AnchorPane>
             </content>

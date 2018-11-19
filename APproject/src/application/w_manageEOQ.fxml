@@ -80,7 +80,7 @@
                   <Insets left="20.0" top="20.0" />
                </VBox.margin>
             </GridPane>
-            <Button mnemonicParsing="false" text="Check EOQ">
+            <Button mnemonicParsing="false" onAction="#lastbutton" text="Check EOQ">
                <VBox.margin>
                   <Insets left="690.0" />
                </VBox.margin>

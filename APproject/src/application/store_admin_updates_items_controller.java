@@ -3,7 +3,9 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import application.Main;
 
-public class w_add_subitems_controller {
+
+public class store_admin_updates_items_controller
+{
 private Main ma;
 	
 
@@ -16,12 +18,14 @@ private Main ma;
 	@FXML
 	private void goback() throws IOException
 	{
-		ma.gobackfrom_delete();
+		ma.gobackfrom_store_admin_updateitems();
 	}
 	@FXML
-	private void delete_button_1() throws IOException
+	private void continueedits() throws IOException
 	{
-		ma.go_add_subitems();
+		ma.goeditingfrom_store();
 	}
+	
+	
 
 }
