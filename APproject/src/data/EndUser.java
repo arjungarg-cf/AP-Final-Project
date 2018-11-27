@@ -6,7 +6,7 @@ private String LoginID,Password;
 
 	EndUser(String id,String pass)
 	{
-		super(null,null,null,null,null);
+
 		
 	}
 	
