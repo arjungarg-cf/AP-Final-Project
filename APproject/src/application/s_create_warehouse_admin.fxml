@@ -17,7 +17,7 @@
          <top>
             <HBox prefHeight="118.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#goback" text="&lt;--Back" />
+                  <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#goback"  text="s--Back" />
                   <Label text="Create Warehouse admin" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="-70.0" top="70.0" />
@@ -81,7 +81,7 @@
    <bottom>
       <HBox prefHeight="72.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#gohome" text="HOME">
+            <Button mnemonicParsing="false" text="HOME">
                <HBox.margin>
                   <Insets left="270.0" top="10.0" />
                </HBox.margin>

@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.end_user_base_controller">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.end_user_search_controller">
    <center>
       <BorderPane prefHeight="516.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
             <HBox prefHeight="133.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#goback"  text="Back" />
-                  <Label text="End user" textFill="WHITE">
+                  <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" prefHeight="43.0" prefWidth="121.0" text="Back" />
+                  <Label prefHeight="50.0" prefWidth="335.0" text="End user" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="-70.0" top="80.0" />
+                        <Insets top="80.0" />
                      </HBox.margin>
                      <font>
                         <Font size="40.0" />
@@ -37,7 +37,7 @@
          <bottom>
             <HBox prefHeight="84.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#gosearch" prefHeight="31.0" prefWidth="95.0" text="Search">
+                  <Button mnemonicParsing="false" onAction="#go_search_from_category" prefHeight="31.0" prefWidth="95.0" text="Search">
                      <HBox.margin>
                         <Insets left="250.0" />
                      </HBox.margin>
@@ -52,10 +52,10 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                  <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Store">
+                  <Label text="Category">
                      <GridPane.margin>
                         <Insets left="100.0" />
                      </GridPane.margin>

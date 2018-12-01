@@ -1,29 +1,27 @@
 package application;
-
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import application.Main;
 
-public class create_warehouse_admin_controller {
+//end user entry controller
+public class end_user_base_controller {
 	private Main ma;
+	
 	@FXML private javafx.scene.control.Button Back;
 	
-	@FXML
-	private void gocreate() throws IOException
-	{
-		ma.create_warehouse_admin_after();
-	}
+	
 	@FXML
 	private void goback() throws IOException
 	{
+//		ma.go_back_to_welcome();
 		Stage stage=(Stage) Back.getScene().getWindow();
 		stage.close();
 	}
-//	@FXML
-//	private void gohome() throws IOException
-//	{
-//		ma.go_back_to_welcome();
-//	}
-
+	@FXML
+	private void gosearch() throws IOException
+	{
+		ma.go_search_store_end_user();
+	}
+	
 }

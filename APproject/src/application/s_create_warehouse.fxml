@@ -21,7 +21,7 @@
          <top>
             <HBox prefHeight="144.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="&lt;-- Back" />
+                  <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#gobacktoprev"  text="s--Back" />
                   <Label text="Create New Warehouse" textFill="WHITE">
                      <font>
                         <Font size="36.0" />

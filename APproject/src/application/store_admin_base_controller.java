@@ -1,10 +1,12 @@
 package application;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 import application.Main;
 
 public class store_admin_base_controller
 {
+	@FXML private javafx.scene.control.Button Back;
 
 private Main ma;
 	
@@ -33,11 +35,13 @@ private Main ma;
 	{
 		ma.s_additems();
 	}
-//	@FXML
-//	private void goback() throws IOException
-//	{
-//		ma.gobackfromstoreadminbase();
-//	}
+	@FXML
+	private void goback() throws IOException
+	{
+		Stage stage=(Stage) Back.getScene().getWindow();
+		stage.close();
+	
+	}
 	
 	
 	

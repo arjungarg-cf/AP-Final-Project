@@ -165,7 +165,7 @@ public class Main extends Application {
 		//mainLayout.setCenter(super1);
 		Stage stage=new Stage();
 		Parent root1=(Parent) loader.load();
-		stage.setTitle("Create warehouse");
+		stage.setTitle("Create warehouse Administrator");
 		stage.setScene(new Scene(root1));
 		stage.show();
 	}
@@ -698,6 +698,51 @@ public class Main extends Application {
 //	
 //	}
 //	
+	
+	
+	//functions of end user:
+	
+	public static void go_search_store_end_user() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_search.fxml"));
+//		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
+//		BorderPane super1 = loader.load();
+//		mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("");
+		stage.setScene(new Scene(root1));
+		stage.show();
+//	
+	}
+	
+	
+	public static void go_search_from_category() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_search_from_category.fxml"));
+//		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
+//		BorderPane super1 = loader.load();
+//		mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("");
+		stage.setScene(new Scene(root1));
+		stage.show();
+//	
+	}
+	public static void go_search_from_sub() throws IOException
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_check_availability.fxml"));
+//		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
+//		BorderPane super1 = loader.load();
+//		mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("");
+		stage.setScene(new Scene(root1));
+		stage.show();
+//	
+	}
 	
 	
 	

@@ -21,7 +21,7 @@
          <top>
             <HBox prefHeight="144.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" onAction="#gobacktoprev" text="&lt;-- Back" />
+                  <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#gobacktoprev"  text="s--Back" />
                   <Label text="Create New store" textFill="WHITE">
                      <font>
                         <Font size="36.0" />
@@ -81,15 +81,7 @@
             </SplitPane>
          </center>
          <bottom>
-            <HBox prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#gohome" text="HOME">
-                     <HBox.margin>
-                        <Insets left="270.0" top="10.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
+            <HBox prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
          </bottom>
       </BorderPane>
    </center>
