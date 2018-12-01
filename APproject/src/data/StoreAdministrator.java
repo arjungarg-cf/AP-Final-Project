@@ -11,7 +11,9 @@ public class StoreAdministrator extends Store {
 		this.ownedstore=null;
 	}
 	
-
+	//function when storeadmin logs out
+	void logout()
+	{};
 	float manageEOQ(String cat,String subcat,String item,int d,int h,int k)
 	{
 		Category s=null;

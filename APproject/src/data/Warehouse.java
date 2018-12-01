@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Warehouse extends Superstore {
 	private WarehouseAdministrator Admin;
 	private String ID,Name;
-	ArrayList<Category> Categories;
+	public ArrayList<Category> Categories;
 
 	static ArrayList<String> Waress;
 	static ArrayList<Warehouse> Wares;

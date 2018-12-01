@@ -1,7 +1,9 @@
 package application;
 import java.io.IOException;
 
-
+import data.StoreAdministrator;
+import data.SuperUser;
+import data.WarehouseAdministrator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -13,6 +15,10 @@ import javafx.scene.layout.BorderPane;
 public class Main extends Application {
 	private Stage primaryStage;
 	private static BorderPane mainLayout;
+	static WarehouseAdministrator W;
+	static StoreAdministrator S;
+	static SuperUser Su;
+	
 	@Override
 	public void start(Stage primaryStage) throws IOException{
 		this.primaryStage=primaryStage;

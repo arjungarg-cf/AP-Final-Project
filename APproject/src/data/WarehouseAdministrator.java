@@ -118,13 +118,12 @@ public class WarehouseAdministrator extends Warehouse {
 	}
 	
 	//Updating Codes:
-	void updateCat(String cat,String name)
+	public void updateCat(String cat,String name)
 	{
 		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
 			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
-
 				this.ownedware.Categories.get(i).setname(name);
 				break;
 			}
@@ -132,7 +131,7 @@ public class WarehouseAdministrator extends Warehouse {
 		}
 	}
 	
-	void updateSubcat(String cat,String subcat,String name)
+	public void updateSubcat(String cat,String subcat,String name)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -152,7 +151,7 @@ public class WarehouseAdministrator extends Warehouse {
 		
 	}
 	
-	void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
+	public void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -187,7 +186,7 @@ public class WarehouseAdministrator extends Warehouse {
 	
 	
 	//Deletion Codes:
-	boolean deleteCategory(String c)
+	public boolean deleteCategory(String c)
 	{
 		
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -203,7 +202,7 @@ public class WarehouseAdministrator extends Warehouse {
 		return false;
 	}
 	
-	boolean deleteSubCategory(String cat,String subcat)
+	public boolean deleteSubCategory(String cat,String subcat)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -259,6 +258,10 @@ public class WarehouseAdministrator extends Warehouse {
 	void setWare(Warehouse w)
 	{
 		this.ownedware=w;
+	}
+	public Warehouse getWare()
+	{
+		return this.ownedware;
 	}
 	String getloginid()
 	{
