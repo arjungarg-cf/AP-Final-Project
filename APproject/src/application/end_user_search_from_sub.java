@@ -17,6 +17,8 @@ public class end_user_search_from_sub {
 		stage.close();
 	}
 	
+	
+	
 	@FXML
 	private void go_search() throws IOException
 	{
