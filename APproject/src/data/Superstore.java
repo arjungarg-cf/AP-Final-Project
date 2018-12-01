@@ -10,8 +10,7 @@ public abstract class Superstore {
 	public abstract void CostCalculation();
 	public abstract void EOQCalculation();
 	public abstract void CheckEOQ();
-	
-	
+
 	
 	
 }
