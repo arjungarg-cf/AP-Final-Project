@@ -33,9 +33,11 @@ public class Main extends Application {
 	
 	// all functions for welcome page
 	
+	
+	
 	public static void showsuperfromwelcome() throws IOException  // go to super user base
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("super_user_base.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("login_page.fxml"));
 		//loader.setLocation(Main.class.getResource("super_user_base.fxml"));
 //		BorderPane super1 = loader.load();
 //		mainLayout.setCenter(super1);
@@ -51,7 +53,7 @@ public class Main extends Application {
 	
 	public static void show_store_admin_from_welcome() throws IOException   // go to store admin base
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("store_manager_base.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("login_store_admin.fxml"));
 		Stage stage=new Stage();
 		Parent root1=(Parent) loader.load();
 		stage.setTitle("Store Manager");
@@ -64,7 +66,7 @@ public class Main extends Application {
 	}
 	public static void show_warehouse_admin_from_welcome() throws IOException  // go to warehouse admin base
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("warehouse_manager_base.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("login_warehouse_admin.fxml"));
 		//loader.setLocation(Main.class.getResource("warehouse_manager_base.fxml"));
 		//BorderPane super1 = loader.load();
 		//mainLayout.setCenter(super1);
@@ -76,7 +78,7 @@ public class Main extends Application {
 	}
 	public static void show_end_user_from_welcome() throws IOException    // go to end user base
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_entry.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_actual_entry.fxml"));
 		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
 		//BorderPane super1 = loader.load();
 		//mainLayout.setCenter(super1);
@@ -744,11 +746,79 @@ public class Main extends Application {
 //	
 	}
 	
+	public static void go_searching_from_end() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_entry.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
 	
 	
+	public static void go_end_user_availability() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_search.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+
 	
 	
+	//functions of login
 	
+	//super user:
+	public static void getlogin_tosuper() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("super_user_base.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	//warehosue admin:
+	
+	public static void login_from_warehosue_Admin() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("warehouse_manager_base.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	//store admin:
+	public static void login_from_store_admin() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("warehouse_manager_base.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
 	
 	
 	public static void main(String[] args) {

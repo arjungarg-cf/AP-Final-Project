@@ -19,7 +19,7 @@
    <top>
       <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#goback"  text="s--Back" />
+            <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -65,7 +65,7 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="Name_category" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <Label text="New Name:" GridPane.rowIndex="1" />
                               <Label text="Select Category" />
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
@@ -76,7 +76,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Sub-Catergory">
+          <Tab fx:id="name_subcategory" text="Sub-Catergory">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -128,13 +128,13 @@
                               <Label text="Select Item" GridPane.rowIndex="2" />
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="item_new_cost" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="item_new_quantity" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                               <Label text="New Cost" GridPane.rowIndex="4" />
                               <Label text="New Quantity" GridPane.rowIndex="5" />
                               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <Label text="New Name:" GridPane.rowIndex="3" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="Item_new_name" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
                         <Button layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />

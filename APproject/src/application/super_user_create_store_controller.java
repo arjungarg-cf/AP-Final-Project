@@ -22,6 +22,7 @@ public class super_user_create_store_controller {
 	@FXML
 	private void create() throws IOException
 	{
+		
 		ma.after_created();
 	}
 }

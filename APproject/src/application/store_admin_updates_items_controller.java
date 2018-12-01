@@ -9,6 +9,12 @@ public class store_admin_updates_items_controller
 {
 private Main ma;
 @FXML private javafx.scene.control.Button Back;
+
+@FXML private javafx.scene.control.TextField Name_category;
+@FXML private javafx.scene.control.TextField name_subcategory;
+@FXML private javafx.scene.control.TextField item_new_cost;
+@FXML private javafx.scene.control.TextField Item_new_name;
+
 	
 
 //	@FXML

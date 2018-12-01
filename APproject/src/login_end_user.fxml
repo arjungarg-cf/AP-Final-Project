@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login_super_user">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <VBox prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
@@ -26,7 +26,7 @@
                   <Image url="@../../../../../Downloads/ARJUN%20LOGO%201.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Back" mnemonicParsing="false" onAction="#goback" prefHeight="42.0" prefWidth="85.0" text="&lt;-- Back">
+            <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="85.0" text="&lt;-- Back">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -51,15 +51,15 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="TEXT1" prefWidth="399.0" promptText="Login ID" GridPane.columnIndex="1">
+                  <TextField prefWidth="399.0" promptText="Login ID" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets top="50.0" />
                      </GridPane.margin></TextField>
-                  <PasswordField fx:id="TEXT2" prefHeight="26.0" prefWidth="425.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <PasswordField onInputMethodTextChanged="#dfsdfds" prefHeight="26.0" prefWidth="425.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets top="-20.0" />
                      </GridPane.margin></PasswordField>
-                  <Button fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tryingtologin" prefHeight="43.0" prefWidth="296.0" style="-fx-background-color: teal;" text="Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="296.0" style="-fx-background-color: teal;" text="Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -84,6 +84,13 @@
       </VBox>
    </center>
    <bottom>
-      <VBox prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Home">
+               <VBox.margin>
+                  <Insets left="270.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
    </bottom>
 </BorderPane>

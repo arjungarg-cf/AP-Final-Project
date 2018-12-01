@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login_super_user">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login_warehosue_Admin">
    <top>
       <VBox prefHeight="99.0" prefWidth="600.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
@@ -26,7 +26,7 @@
                   <Image url="@../../../../../Downloads/ARJUN%20LOGO%201.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Back" mnemonicParsing="false" onAction="#goback" prefHeight="42.0" prefWidth="85.0" text="&lt;-- Back">
+            <Button fx:id="BACK" mnemonicParsing="false" onAction="#goback" prefHeight="42.0" prefWidth="85.0" text="&lt;-- Back">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -55,11 +55,11 @@
                      <GridPane.margin>
                         <Insets top="50.0" />
                      </GridPane.margin></TextField>
-                  <PasswordField fx:id="TEXT2" prefHeight="26.0" prefWidth="425.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <PasswordField fx:id="TEXT2"  prefHeight="26.0" prefWidth="425.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets top="-20.0" />
                      </GridPane.margin></PasswordField>
-                  <Button fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tryingtologin" prefHeight="43.0" prefWidth="296.0" style="-fx-background-color: teal;" text="Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="LOGIN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tryingtologin_warehouse" prefHeight="43.0" prefWidth="296.0" style="-fx-background-color: teal;" text="Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
