@@ -12,6 +12,41 @@ public class WarehouseAdministrator extends Warehouse {
 		// TODO Auto-generated constructor stub
 	}
 	
+	float manageEOQ(String cat,String subcat,String item,int d,int h,int k)
+	{
+		Category s=null;
+		for(int i=0;i<this.Categories.size();i++)
+		{
+			if(cat.equals(this.Categories.get(i).getname()))
+			{
+				s=this.Categories.get(i);
+				break;
+			}
+			
+		}
+		Sub_Category sub=null;
+		for(int i=0;i<s.subcat.size();i++)
+		{
+			if(subcat.equals(s.subcat.get(i).getname()))
+				sub=s.subcat.get(i);
+		}
+		
+		for(int i=0;i<sub.Items.size();i++)
+		{
+			if(item.equals(sub.Items.get(i).getname()))
+			{
+				if(d!=-1)
+				sub.Items.get(i).setd(d);
+				if(h!=-1)
+				sub.Items.get(i).seth(h);
+				if(k!=-1)
+				sub.Items.get(i).setk(k);
+				return sub.Items.get(i).getEOQ();
+			}
+		}
+		return -1f;
+	}
+	
 	//Addition Codes:
 	boolean  addCat(String name)
 	{
