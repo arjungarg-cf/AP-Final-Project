@@ -40,10 +40,12 @@ private Main ma;
 //	}
 //
 
+	//To be changed
 	public void initialize() {
 		// TODO Auto-generated method stub
 		ArrayList<Category> cats=Main.W.getWare().Categories;
-		cats.sort(Category);
+		cats.sort(null);
+		
 		
 	}
 
