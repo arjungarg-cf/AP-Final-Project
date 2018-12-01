@@ -1,12 +1,13 @@
 package data;
 
-public class EndUser extends Store{
+public class EndUser{
 
 private String LoginID,Password;
 
 	EndUser(String id,String pass)
 	{
-
+		this.LoginID=id;
+		this.Password=pass;
 		
 	}
 	

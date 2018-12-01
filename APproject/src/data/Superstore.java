@@ -2,14 +2,15 @@ package data;
 
 import java.util.ArrayList;
 
-public abstract class Superstore {
-	final String ID,Name;
-	ArrayList<Category> Categories;
+public interface Superstore {
+
 	
-	Superstore(String id,String name)
-	{
-		this.ID=id;
-		this.Name=name;
-	}
+	public void Update();
+	public void CostCalculation();
+	public void EOQCalculation();
+	public void CheckEOQ();
+	
+	
+	
 	
 }

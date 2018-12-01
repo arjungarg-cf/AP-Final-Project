@@ -2,7 +2,7 @@ package data;
 
 import java.util.ArrayList;
 
-public class DataUsers {
+public class UserData {
 	public static ArrayList<WarehouseAdministrator> Wareadmin;
 	public static ArrayList<StoreAdministrator> Storeadmin;
 	public static ArrayList<SuperUser> Superusers;

@@ -20,12 +20,17 @@ public class SuperUser extends SuperSuper {
 	{
 		Warehouse W=new Warehouse(A,name,ID);
 		W.Wares.add(W);
+		W.Waress.add(W.getname());
 	}
 
 	void CreateStore(StoreAdministrator s,String id,Warehouse w,String n,int m) {
 		Store S=new Store(s, id, n, w, m);
 		Stores.add(S);
+		S.Stores.add(S);
+		S.Storess.add(S.getname());
 		
 	}
+	
+	ArrayList<String> 
 	
 }
