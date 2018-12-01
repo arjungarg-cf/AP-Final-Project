@@ -7,6 +7,9 @@ import application.Main;
 public class w_delete_subitems_controller {
 private Main ma;
 @FXML private javafx.scene.control.Button Back;
+@FXML private javafx.scene.control.Button delcat;
+@FXML private javafx.scene.control.Button delsubcat;
+@FXML private javafx.scene.control.Button delitem;
 
 //	@FXML
 //	private void gohome() throws IOException
