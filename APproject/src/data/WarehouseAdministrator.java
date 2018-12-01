@@ -187,7 +187,7 @@ public class WarehouseAdministrator extends Warehouse {
 	
 	//Deletion Codes:
 	//Add category not found
-	void deleteCategory(String c)
+	boolean deleteCategory(String c)
 	{
 		
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -195,13 +195,15 @@ public class WarehouseAdministrator extends Warehouse {
 			if(c.equals(this.ownedware.Categories.get(i).getname()))
 			{
 				this.ownedware.Categories.remove(i);
-				break;
+				return true;
+				
 			}
 			
 		}
+		return false;
 	}
 	
-	void deleteSubCategory(String cat,String subcat)
+	boolean deleteSubCategory(String cat,String subcat)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -216,13 +218,16 @@ public class WarehouseAdministrator extends Warehouse {
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
+			{
 				s.subcat.remove(i);
+				return true;
+			}
 		}
-		
+		return false;
 		
 	}
 	
-	void deleteItem(String cat,String subcat,String item)
+	boolean deleteItem(String cat,String subcat,String item)
 	{
 		Category s=null;
 		for(int i=0;i<this.Categories.size();i++)
@@ -244,8 +249,11 @@ public class WarehouseAdministrator extends Warehouse {
 		for(int i=0;i<sub.Items.size();i++)
 		{
 			if(item.equals(sub.Items.get(i).getname()))
-				sub.Items.remove(i);
+			{	sub.Items.remove(i);
+				return true;
+			}
 		}
+		return false;
 	}
 	
 	void setWare(Warehouse w)
@@ -261,6 +269,6 @@ public class WarehouseAdministrator extends Warehouse {
 	{
 		return this.Password;
 	}
-//additems daaliyo
+
 
 }
