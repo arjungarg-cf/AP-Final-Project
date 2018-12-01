@@ -21,6 +21,11 @@ public class Sub_Category {
 		return this.name;
 	}
 	
+	void setname(String s)
+	{
+		this.name=s;
+	}
+	
 	//Other fucntions
 	void additem(Item a) {
 		this.Items.add(a);

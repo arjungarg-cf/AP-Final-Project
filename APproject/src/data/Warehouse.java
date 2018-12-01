@@ -2,7 +2,7 @@ package data;
 
 import java.util.ArrayList;
 
-public class Warehouse implements Superstore {
+public class Warehouse extends Superstore {
 	private WarehouseAdministrator Admin;
 	private String ID,Name;
 	ArrayList<Category> Categories;
@@ -16,8 +16,7 @@ public class Warehouse implements Superstore {
 		this.ID=id;
 		this.Name=name;
 		this.Admin=null;
-		Waress.add(name);
-		
+		Waress.add(name);	
 	}
 	
 	@Override

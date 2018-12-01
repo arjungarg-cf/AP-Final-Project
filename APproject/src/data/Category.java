@@ -17,6 +17,10 @@ public class Category {
 	{
 		return this.name;
 	}
+	void setname(String s)
+	{
+		this.name=s;
+	}
 	
 	//other
 	void addsubcat(Sub_Category s) {

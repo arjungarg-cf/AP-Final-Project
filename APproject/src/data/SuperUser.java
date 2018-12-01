@@ -21,17 +21,20 @@ public class SuperUser extends SuperSuper {
 	void CreateWarehouse(WarehouseAdministrator A,String name,String ID)
 	{
 		Warehouse W=new Warehouse(name,ID);
-		W.setAdmin(A);
-		W.Wares.add(W);
-		W.Waress.add(W.getname());
+		Wares.add(W);
+		Warehouse.Wares.add(W);
+		Warehouse.Waress.add(W.getname());
+		A.setWare(W);
+		A.setAdmin(A);
 	}
 
-	void CreateStore(StoreAdministrator s,String id,Warehouse w,String n,int m) {
+	void CreateStore(StoreAdministrator A,String id,Warehouse w,String n,int m) {
 		Store S=new Store(id, n, w, m);
-		S.setAdmin(s);
+		A.setAdmin(A);
+		A.setStore(S);
 		Stores.add(S);
-		S.Stores.add(S);
-		S.Storess.add(S.getname());
+		Store.Stores.add(S);
+		Store.Storess.add(S.getname());
 		
 	}
 	
