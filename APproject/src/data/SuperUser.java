@@ -1,5 +1,7 @@
 package data;
 
+import java.util.ArrayList;
+
 public class SuperUser extends SuperSuper {
 	
 	private String LoginID,Password;
@@ -31,6 +33,24 @@ public class SuperUser extends SuperSuper {
 		
 	}
 	
-	ArrayList<String> 
+	Store ViewStore(String store) {
+		for(int i=0;i<Store.Storess.size();i++)
+		{
+			if(store.equals(Store.Stores.get(i).getname()))
+				return Store.Stores.get(i);
+		}
+		return null;
+		
+	}
+	
+	Warehouse ViewWarehouse(String ware)
+	{
+		for(int i=0;i<Warehouse.Wares.size();i++)
+		{
+			if(ware.equals(Warehouse.Wares.get(i).getname()))
+				return Warehouse.Wares.get(i);
+		}
+		return null;
+	}
 	
 }
