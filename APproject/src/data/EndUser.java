@@ -13,7 +13,7 @@ public class EndUser{
 //		
 //	}
 //	
-	ArrayList<Category> searchCat(String store)
+	static ArrayList<Category> searchCat(String store)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
@@ -31,7 +31,7 @@ public class EndUser{
 	
 	}
 	
-	ArrayList<Sub_Category> searchSubcat(String store,String cat)
+	static ArrayList<Sub_Category> searchSubcat(String store,String cat)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
@@ -58,7 +58,7 @@ public class EndUser{
 		
 	}
 	
-	ArrayList<Item> searchItem(String store,String cat,String sub)
+	static ArrayList<Item> searchItem(String store,String cat,String sub)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
