@@ -9,6 +9,7 @@ private Main ma;
 	
 
 
+
 //	@FXML
 //	private void gocontinuedeleting() throws IOException
 //	{
