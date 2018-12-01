@@ -15,11 +15,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.w_update_items_controller">
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.w_update_items_controller">
    <top>
       <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="Back" cancelButton="true"  mnemonicParsing="false" onAction="#goback"  text="s--Back" />
+            <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -65,13 +65,13 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="tboxcat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <Label text="New Name:" GridPane.rowIndex="1" />
                               <Label text="Select Category" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                              <ChoiceBox fx:id="cboxcat" prefWidth="150.0" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="734.0" layoutY="117.0" mnemonicParsing="false" onAction="#continueedits" text="Edit" />
+                        <Button layoutX="734.0" layoutY="117.0" mnemonicParsing="false" onAction="#editcat" text="Edit" />
                      </children>
                   </AnchorPane>
             </content>
@@ -94,13 +94,13 @@
                            <children>
                               <Label text="Select Category:" />
                               <Label text="New name of Sub-category" GridPane.rowIndex="2" />
-                              <TextField prefHeight="60.0" prefWidth="368.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="tboxsub" prefHeight="60.0" prefWidth="368.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ChoiceBox fx:id="catboxsub" prefWidth="150.0" GridPane.columnIndex="1" />
                               <Label text="Select Sub-category" GridPane.rowIndex="1" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <ChoiceBox fx:id="subcatboxsub" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="731.0" layoutY="154.0" mnemonicParsing="false" text="Edit" />
+                        <Button fx:id="editsubcat" layoutX="731.0" layoutY="154.0" mnemonicParsing="false" onAction="#editsubcat" text="Edit" />
                      </children>
                   </AnchorPane>
             </content>
@@ -126,18 +126,18 @@
                               <Label text="Enter Category" />
                               <Label text="Enter Sub-category" GridPane.rowIndex="1" />
                               <Label text="Select Item" GridPane.rowIndex="2" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <ChoiceBox fx:id="catboxitem" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <ChoiceBox fx:id="subboxitem" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="costitem" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="quantitem" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                               <Label text="New Cost" GridPane.rowIndex="4" />
                               <Label text="New Quantity" GridPane.rowIndex="5" />
-                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ChoiceBox fx:id="itemboxitem" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <Label text="New Name:" GridPane.rowIndex="3" />
-                              <TextField promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="nameitem" promptText="Enter -1 for no change" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
-                        <Button layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="edititem" layoutX="727.0" layoutY="229.0" mnemonicParsing="false" onAction="#edititem" text="Create" />
                      </children>
                   </AnchorPane>
               </content>
