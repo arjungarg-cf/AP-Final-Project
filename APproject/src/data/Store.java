@@ -56,11 +56,11 @@ public class Store extends Superstore {
 		return this.MaxItems;
 	}
 	
-	String getname()
+	public String getname()
 	{
 		return this.Name;
 	}
-	String getID()
+	public String getID()
 	{
 		return this.ID;
 	}
