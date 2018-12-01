@@ -77,6 +77,7 @@ public class SuperUser extends SuperSuper {
 			
 	}
 	
+	//make changes for inverted inheritance
 	void CreateWarehouseadmin(String storename, String storeid,String lid,String pass) {
 		WarehouseAdministrator W=new WarehouseAdministrator(storename, storeid, lid, pass);
 		UserData.Wareadmin.add(W);
