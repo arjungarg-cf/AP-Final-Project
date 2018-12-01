@@ -272,6 +272,7 @@ public class Main extends Application {
 //	
 	// functions of super link store and warehouse
 	
+	
 //	public static void gotoprev() throws IOException														//here
 //	{
 ////		FXMLLoader loader= new FXMLLoader(Main.class.getResource("super_user_base.fxml"));
