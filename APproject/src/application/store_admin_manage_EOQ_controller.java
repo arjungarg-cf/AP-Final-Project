@@ -1,11 +1,14 @@
 package application;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import application.Main;
-
-
+import data.EndUser;
+import data.Item;
+import data.EndUser;
 public class store_admin_manage_EOQ_controller {
 private Main ma;
 @FXML private javafx.scene.control.Button Back;
@@ -13,11 +16,13 @@ private Main ma;
 @FXML private javafx.scene.control.TextField TEXT2;
 @FXML private javafx.scene.control.TextField TEXT3;
 @FXML private javafx.scene.control.ChoiceBox<String> dropbox1;
-	
+@FXML private javafx.scene.control.TextField OUTPUT;
+
 @FXML
-	void initialize() throws IOException
+	public void initialize() throws IOException
 	{
-	
+		String store=Main.S.getStore().getName();
+		ArrayList<Item> it=EndUser.searchItem(String store,String cat,String sub);
 	}
 	@FXML
 	private void goback() throws IOException
@@ -35,8 +40,11 @@ private Main ma;
 		int k=Integer.parseInt(TEXT3.getText());
 		
 		//System.out.println(d+h+k);
-		float a= manageEOQ(cat, subcat, item, d, h, k);
+		float a= Main.S.manageEOQ(cat, subcat, item, d, h, k);
 		//write a to the answer place
+		System.out.println(a);
+		OUTPUT.setText(Float.toString(a));
+		
 		
 		
 		
