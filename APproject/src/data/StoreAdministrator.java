@@ -275,7 +275,7 @@ public class StoreAdministrator extends Store {
 		return this.Password;
 	}
 	
-	Store getStore()
+	public Store getStore()
 	{
 		return this.ownedstore;
 	}

@@ -70,7 +70,7 @@
                   <TextField fx:id="TEXT2" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <TextField fx:id="TEXT3" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label text="EOQ" GridPane.rowIndex="4" />
-                  <Label text="EOQ will be displayed here" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="OUTPUT" text="EOQ will be displayed here" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />
