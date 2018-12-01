@@ -2,14 +2,28 @@ package application;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 import application.Main;
 
 public class super_user_controller {
 	private Main ma;
+	@FXML private javafx.scene.control.Button Home;
+	@FXML private javafx.scene.control.Button Back;
+	@FXML private javafx.scene.control.Button Logout;
+	
 	@FXML
 	private void goback() throws IOException
 	{
-		ma.go_back_to_welcome();
+//		ma.go_back_to_welcome();
+		Stage stage=(Stage) Home.getScene().getWindow();
+		stage.close();
+	}
+	@FXML
+	private void goback1() throws IOException
+	{
+//		ma.go_back_to_welcome();
+		Stage stage=(Stage) Back.getScene().getWindow();
+		stage.close();
 	}
 	@FXML
 	private void gocreatestore() throws IOException

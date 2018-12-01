@@ -5,16 +5,16 @@ import application.Main;
 
 public class super_user_create_warehouse_controller {
 	private Main ma;
-	@FXML
-	private void gobacktoprev() throws IOException
-	{
-		ma.back_of_s_create_store();
-	}
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
+//	@FXML
+//	private void gobacktoprev() throws IOException
+//	{
+//		ma.back_of_s_create_store();
+//	}
+//	@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
 	@FXML
 	private void create() throws IOException
 	{

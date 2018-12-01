@@ -18,11 +18,11 @@ private Main ma;
 	{
 		ma.s_manageEOQ();
 	}
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
+//	@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
 	@FXML
 	private void deletesubitems() throws IOException
 	{
@@ -33,11 +33,11 @@ private Main ma;
 	{
 		ma.s_additems();
 	}
-	@FXML
-	private void goback() throws IOException
-	{
-		ma.gobackfromstoreadminbase();
-	}
+//	@FXML
+//	private void goback() throws IOException
+//	{
+//		ma.gobackfromstoreadminbase();
+//	}
 	
 	
 	

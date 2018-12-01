@@ -9,17 +9,17 @@ public class store_admin_updates_items_controller
 private Main ma;
 	
 
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
-
-	@FXML
-	private void goback() throws IOException
-	{
-		ma.gobackfrom_store_admin_updateitems();
-	}
+//	@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
+//
+//	@FXML
+//	private void goback() throws IOException
+//	{
+//		ma.gobackfrom_store_admin_updateitems();
+//	}
 	@FXML
 	private void continueedits() throws IOException
 	{

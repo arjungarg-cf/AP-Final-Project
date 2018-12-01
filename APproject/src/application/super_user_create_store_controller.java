@@ -11,11 +11,11 @@ public class super_user_create_store_controller {
 	{
 		ma.back_of_s_create_store();
 	}
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
+	//@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
 	@FXML
 	private void create() throws IOException
 	{

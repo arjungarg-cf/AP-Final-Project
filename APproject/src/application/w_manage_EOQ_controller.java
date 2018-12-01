@@ -9,17 +9,17 @@ public class w_manage_EOQ_controller {
 private Main ma;
 	
 
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
-
-	@FXML
-	private void goback() throws IOException
-	{
-		ma.gobackfrom_manage();
-	}
+//	@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
+//
+//	@FXML
+//	private void goback() throws IOException
+//	{
+//		ma.gobackfrom_manage();
+//	}
 	@FXML
 	private void lastbutton() throws IOException
 	{

@@ -12,15 +12,15 @@ public class create_warehouse_admin_controller {
 	{
 		ma.create_warehouse_admin_after();
 	}
-	@FXML
-	private void goback() throws IOException
-	{
-		ma.gobackfromhere();
-	}
-	@FXML
-	private void gohome() throws IOException
-	{
-		ma.go_back_to_welcome();
-	}
+	//@FXML
+//	private void goback() throws IOException
+//	{
+//		ma.gobackfromhere();
+//	}
+//	@FXML
+//	private void gohome() throws IOException
+//	{
+//		ma.go_back_to_welcome();
+//	}
 
 }
