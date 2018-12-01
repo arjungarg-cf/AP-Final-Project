@@ -8,6 +8,7 @@ public class after_store_admin_deletes_subitem_controller {
 private Main ma;
 	
 
+
 //	@FXML
 //	private void gocontinuedeleting() throws IOException
 //	{
