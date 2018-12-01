@@ -1,8 +1,9 @@
 package data;
 //Complete mostlikely
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Category {
+public class Category implements Comparable<Category> {
 	
 	ArrayList<Sub_Category> subcat;
 	private String name;
@@ -10,6 +11,17 @@ public class Category {
 	Category(String n){
 		this.name=n;
 		this.subcat=null;
+	}
+	
+	@Override
+	public int compareTo(Category o)
+	{
+		if(this.name.compareTo(o.getname())>1)
+			return 1;
+		else if(this.name.equals(o.getname()))
+			return 0;
+		else
+			return -1;
 	}
 	
 	//GETTER AND SETTER

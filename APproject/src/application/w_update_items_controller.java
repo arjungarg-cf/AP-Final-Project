@@ -9,7 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.stage.Stage;
 import application.Main;
 import data.Category;
-
+import data.Category;
 
 public class w_update_items_controller {
 private Main ma;
@@ -43,6 +43,7 @@ private Main ma;
 	public void initialize() {
 		// TODO Auto-generated method stub
 		ArrayList<Category> cats=Main.W.getWare().Categories;
+		cats.sort(Category);
 		
 	}
 
