@@ -19,6 +19,7 @@ public class Main extends Application {
 	static StoreAdministrator S;
 	static SuperUser Su;
 	
+	
 	@Override
 	public void start(Stage primaryStage) throws IOException{
 		this.primaryStage=primaryStage;
