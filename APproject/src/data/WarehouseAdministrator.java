@@ -3,8 +3,8 @@ package data;
 public class WarehouseAdministrator extends Warehouse {
 	private String LoginID,Password;
 	
-	WarehouseAdministrator(WarehouseAdministrator a, String name, String id,String lid,String pass) {
-		super(a, name, id);
+	WarehouseAdministrator(String name, String id,String lid,String pass) {
+		super(name, id);	
 		this.LoginID=lid;
 		this.Password=pass;
 		

@@ -11,11 +11,11 @@ public class Warehouse implements Superstore {
 	static ArrayList<Warehouse> Wares;
 	
 	//CONSTRUCTOR
-	Warehouse(WarehouseAdministrator a,String name,String id)
+	Warehouse(String name,String id)
 	{
 		this.ID=id;
 		this.Name=name;
-		this.Admin=a;
+		this.Admin=null;
 		Waress.add(name);
 		
 	}
@@ -48,6 +48,9 @@ public class Warehouse implements Superstore {
 	WarehouseAdministrator getadmin()
 	{
 		return this.Admin;
+	}
+	void setAdmin(WarehouseAdministrator a) {
+		this.Admin=a;
 	}
 	
 	String getname()

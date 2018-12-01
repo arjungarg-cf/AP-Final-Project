@@ -3,8 +3,8 @@ package data;
 public class StoreAdministrator extends Store {
 	private String LoginID,Password;
 	
-	public StoreAdministrator(StoreAdministrator sa,String id,String name,Warehouse w,int max,String lid,String pass) {
-		super(sa,id,name,w,max);
+	public StoreAdministrator(String storeid,String storename,Warehouse w,int max,String lid,String pass) {
+		super(storeid,storename,w,max);
 		this.LoginID=lid;
 		this.Password=pass;
 	}

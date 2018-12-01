@@ -12,10 +12,10 @@ public class Store implements Superstore {
 	static ArrayList<Store> Stores;
 	ArrayList<Category> Categories;
 	
-	Store(StoreAdministrator sa,String id,String name,Warehouse w,int max){
+	Store(String id,String name,Warehouse w,int max){
 		this.ID=id;
 		this.Name=name;
-		this.Admin=sa;
+		this.Admin=null;
 		this.LinkedWare_obj=w;
 //		this.LinkedWare_string=w.getname();
 		this.MaxItems=max;
@@ -63,6 +63,14 @@ public class Store implements Superstore {
 	String getID()
 	{
 		return this.ID;
+	}
+	void setWarehouse(Warehouse w)
+	{
+		this.LinkedWare_obj=w;
+	}
+	
+	void setAdmin(StoreAdministrator s) {
+		this.Admin=s;
 	}
 
 	
