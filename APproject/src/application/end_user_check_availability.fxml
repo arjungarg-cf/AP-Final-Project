@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Availability of the required item is: ">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+            </Label>
+            <TextField promptText="Availibility">
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

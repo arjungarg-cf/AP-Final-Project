@@ -5,23 +5,24 @@ import javafx.stage.Stage;
 import application.Main;
 
 
-public class super_user_create_store_controller {
+public class end_user_search_from_sub {
 	private Main ma;
+	
 	@FXML private javafx.scene.control.Button Back;
 	@FXML
-	private void gobacktoprev() throws IOException
+	private void goback() throws IOException
 	{
+//		ma.go_back_to_welcome();
 		Stage stage=(Stage) Back.getScene().getWindow();
 		stage.close();
 	}
-	//@FXML
-//	private void gohome() throws IOException
-//	{
-//		ma.go_back_to_welcome();
-//	}
+	
+	
+	
 	@FXML
-	private void create() throws IOException
+	private void go_search() throws IOException
 	{
-		ma.after_created();
+		ma.go_search_from_sub();
 	}
+
 }

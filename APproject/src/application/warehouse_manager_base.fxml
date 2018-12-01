@@ -13,7 +13,7 @@
    <top>
       <VBox prefHeight="160.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#goback" text="&lt;-- Back" />
+            <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -38,16 +38,8 @@
    <bottom>
       <VBox prefHeight="103.0" prefWidth="814.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#gohome" text="Home">
-               <VBox.margin>
-                  <Insets left="320.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#gohome" text="Logout">
-               <VBox.margin>
-                  <Insets left="400.0" top="-32.0" />
-               </VBox.margin>
-            </Button>
+            
+               
          </children>
       </VBox>
    </bottom>

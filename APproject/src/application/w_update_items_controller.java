@@ -1,11 +1,13 @@
 package application;
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 import application.Main;
 
 
 public class w_update_items_controller {
 private Main ma;
+@FXML private javafx.scene.control.Button Back;
 	
 
 //	@FXML
@@ -14,11 +16,12 @@ private Main ma;
 //		ma.go_back_to_welcome();
 //	}
 //
-//	@FXML
-//	private void goback() throws IOException
-//	{
-//		ma.gobackfrom_w_updateitems();
-//	}
+	@FXML
+	private void goback() throws IOException
+	{
+		Stage stage=(Stage) Back.getScene().getWindow();
+		stage.close();
+	}
 	@FXML
 	private void continueedits() throws IOException
 	{

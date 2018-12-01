@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.s_view_warehouse_controller">
    <center>
       <BorderPane prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <top>
             <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="&lt;--Back" />
+                  <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
                   <Label prefHeight="44.0" prefWidth="305.0" text="View Warehouse" textFill="#fffefe">
                      <HBox.margin>
                         <Insets top="40.0" />
