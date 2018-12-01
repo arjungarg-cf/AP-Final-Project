@@ -2,7 +2,7 @@ package data;
 
 import java.util.ArrayList;
 
-public class Store implements Superstore {
+public class Store extends Superstore {
 	private StoreAdministrator Admin;
 //	private String LinkedWare_string;
 	private Warehouse LinkedWare_obj;
