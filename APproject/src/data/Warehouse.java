@@ -16,8 +16,7 @@ public class Warehouse extends Superstore {
 		this.ID=id;
 		this.Name=name;
 		this.Admin=null;
-		Waress.add(name);
-		
+		Waress.add(name);	
 	}
 	
 	@Override

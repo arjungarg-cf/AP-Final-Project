@@ -15,11 +15,11 @@ public class WarehouseAdministrator extends Warehouse {
 	float manageEOQ(String cat,String subcat,String item,int d,int h,int k)
 	{
 		Category s=null;
-		for(int i=0;i<this.Categories.size();i++)
+		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
-			if(cat.equals(this.Categories.get(i).getname()))
+			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
-				s=this.Categories.get(i);
+				s=this.ownedware.Categories.get(i);
 				break;
 			}
 			
@@ -90,11 +90,11 @@ public class WarehouseAdministrator extends Warehouse {
 	boolean addItem(String cat,String subcat,String name,float cost,int quant)
 	{
 		Category s=null;
-		for(int i=0;i<this.Categories.size();i++)
+		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
-			if(cat.equals(this.Categories.get(i).getname()))
+			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
-				s=this.Categories.get(i);
+				s=this.ownedware.Categories.get(i);
 				break;
 			}
 			
@@ -154,11 +154,11 @@ public class WarehouseAdministrator extends Warehouse {
 	void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
 	{
 		Category s=null;
-		for(int i=0;i<this.Categories.size();i++)
+		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
-			if(cat.equals(this.Categories.get(i).getname()))
+			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
-				s=this.Categories.get(i);
+				s=this.ownedware.Categories.get(i);
 				break;
 			}
 			
@@ -186,7 +186,6 @@ public class WarehouseAdministrator extends Warehouse {
 	
 	
 	//Deletion Codes:
-	//Add category not found
 	boolean deleteCategory(String c)
 	{
 		
@@ -230,11 +229,11 @@ public class WarehouseAdministrator extends Warehouse {
 	boolean deleteItem(String cat,String subcat,String item)
 	{
 		Category s=null;
-		for(int i=0;i<this.Categories.size();i++)
+		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
-			if(cat.equals(this.Categories.get(i).getname()))
+			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
-				s=this.Categories.get(i);
+				s=this.ownedware.Categories.get(i);
 				break;
 			}
 			
