@@ -1,8 +1,15 @@
 package data;
 
-public class EndUser extends SuperEnd{
+public class EndUser{
 
 private String LoginID,Password;
+
+	EndUser(String id,String pass)
+	{
+		this.LoginID=id;
+		this.Password=pass;
+		
+	}
 	
 	String getloginid()
 	{

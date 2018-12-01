@@ -1,21 +1,53 @@
 package data;
 
+import java.util.ArrayList;
+
 public class Store implements Superstore {
-	StoreAdministrator Admin;
+	private StoreAdministrator Admin;
 //	private String LinkedWare_string;
-	Warehouse LinkedWare_obj;
+	private Warehouse LinkedWare_obj;
 	private final int MaxItems;
+	private String ID,Name;
+	static ArrayList<String> Storess;
+	static ArrayList<Store> Stores;
+	ArrayList<Category> Categories;
 	
-	//CONSTRUCTOR
-	Store(StoreAdministrator sa,Warehouse w,int max){
-		this.Admin=sa;
+	Store(String id,String name,Warehouse w,int max){
+		this.ID=id;
+		this.Name=name;
+		this.Admin=null;
 		this.LinkedWare_obj=w;
 //		this.LinkedWare_string=w.getname();
 		this.MaxItems=max;
 	}
 	
+	@Override
+	public void Update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void CostCalculation() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void EOQCalculation() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void CheckEOQ() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 //	String getware()
-//	{
+//	{	
 //		return this.LinkedWare_string;
 //	}
 	
@@ -23,6 +55,24 @@ public class Store implements Superstore {
 	{
 		return this.MaxItems;
 	}
+	
+	String getname()
+	{
+		return this.Name;
+	}
+	String getID()
+	{
+		return this.ID;
+	}
+	void setWarehouse(Warehouse w)
+	{
+		this.LinkedWare_obj=w;
+	}
+	
+	void setAdmin(StoreAdministrator s) {
+		this.Admin=s;
+	}
+
 	
 
 }
