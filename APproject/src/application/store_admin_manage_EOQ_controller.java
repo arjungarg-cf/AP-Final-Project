@@ -21,8 +21,8 @@ private Main ma;
 @FXML
 	public void initialize() throws IOException
 	{
-		String store=Main.S.getStore().getName();
-		ArrayList<Item> it=EndUser.searchItem(String store,String cat,String sub);
+		String store=Main.S.getStore().getname();
+		ArrayList<Item> it=EndUser.searchItem(store,String cat,String sub);
 	}
 	@FXML
 	private void goback() throws IOException
