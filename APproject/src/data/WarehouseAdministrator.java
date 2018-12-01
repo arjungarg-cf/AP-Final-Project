@@ -24,6 +24,7 @@ public class WarehouseAdministrator extends Warehouse {
 			}
 			
 		}
+		
 		Sub_Category sub=null;
 		for(int i=0;i<s.subcat.size();i++)
 		{
