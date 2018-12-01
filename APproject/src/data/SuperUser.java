@@ -6,6 +6,7 @@ public class SuperUser extends SuperSuper {
 	
 	private String LoginID,Password;
 	
+	
 	//GETTERS AND SETTERS
 	String getloginid()
 	{
