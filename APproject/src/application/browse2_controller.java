@@ -19,6 +19,7 @@ public class browse2_controller {
 	
 	
 	
+	
 	@FXML
 	private void go_search() throws IOException
 	{

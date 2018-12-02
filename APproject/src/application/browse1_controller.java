@@ -16,7 +16,7 @@ public class browse1_controller {
 		Stage stage=(Stage) Back.getScene().getWindow();
 		stage.close();
 	}
-	
+
 	
 	
 	@FXML
