@@ -49,7 +49,7 @@ public class WarehouseAdministrator extends Warehouse {
 	}
 	
 	//Addition Codes:
-	boolean  addCat(String name)
+	public boolean  addCat(String name)
 	{
 		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
@@ -66,7 +66,7 @@ public class WarehouseAdministrator extends Warehouse {
 		
 	}
 	
-	boolean addSubcat(String cat,String subcat)
+	public boolean addSubcat(String cat,String subcat)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -88,7 +88,7 @@ public class WarehouseAdministrator extends Warehouse {
 		return true;
 	}
 	
-	boolean addItem(String cat,String subcat,String name,float cost,int quant)
+	public boolean addItem(String cat,String subcat,String name,float cost,int quant)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
