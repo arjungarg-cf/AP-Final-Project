@@ -916,6 +916,7 @@ public class Main extends Application {
 	}
 	
 	
+	
 	public static void open_create_new_store_admin() throws IOException    // go to end user base
 	{
 		FXMLLoader loader= new FXMLLoader(Main.class.getResource("s_create_store_admin.fxml"));
