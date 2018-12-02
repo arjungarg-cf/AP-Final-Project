@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"data","l":"Category"}]
