@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import data.EndUser;
+import data.Store;
 import data.StoreAdministrator;
 import data.SuperSuper;
 import data.SuperUser;
@@ -942,7 +943,11 @@ public class Main extends Application {
 		Warehouse.Wares=new ArrayList<Warehouse>();
 		Warehouse.Waress=new ArrayList<String>();
 		SuperSuper.Wares=new ArrayList<Warehouse>();
+		SuperSuper.Stores=new ArrayList<Store>();
+		Store.Stores=new ArrayList<Store>();
+		Store.Storess=new ArrayList<String>();
 		Su=new SuperUser("admin","pass");
+		
 		UserData.Superusers.add(Su);
 		launch(args);
 	}

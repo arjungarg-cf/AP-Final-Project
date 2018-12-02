@@ -27,7 +27,7 @@ public class login_store_admin_controller {
 		boolean suc=false;
 		for(int i=0;i<UserData.Storeadmin.size();i++)
 		{
-			if(UserData.Storeadmin.get(i).getID().equals(x) && UserData.Storeadmin.get(i).getpass().equals(y))
+			if(UserData.Storeadmin.get(i).getloginid().equals(x) && UserData.Storeadmin.get(i).getpass().equals(y))
 			{
 				suc=true;
 				Main.S=UserData.Storeadmin.get(i);

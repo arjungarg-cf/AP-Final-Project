@@ -41,7 +41,8 @@ public class SuperUser extends SuperSuper {
 		if(A==null)
 			return false;
 		Warehouse W=new Warehouse(name,ID);
-		Wares.add(W);
+		W.setAdmin(A);
+		SuperSuper.Wares.add(W);
 		Warehouse.Wares.add(W);
 		Warehouse.Waress.add(W.getname());
 		A.setWare(W);	
@@ -55,16 +56,16 @@ public class SuperUser extends SuperSuper {
 		StoreAdministrator A=null;
 		for(int i=0;i<UserData.Storeadmin.size();i++)
 		{
-			if(UserData.Storeadmin.get(i).getname().equals(b))
+			if(UserData.Storeadmin.get(i).getloginid().equals(b))
 				A=UserData.Storeadmin.get(i);
 		}
 		if(A==null)
 			return false;
-		WarehouseAdministrator w=null;
-		for (int i = 0; i < UserData.Wareadmin.size(); i++) {
-			if(UserData.Wareadmin.get(i).getname().equals(ware))
+		Warehouse w=null;
+		for (int i = 0; i < SuperSuper.Wares.size(); i++) {
+			if(SuperSuper.Wares.get(i).getID().equals(ware))
 			{
-				w=UserData.Wareadmin.get(i);
+				w=SuperSuper.Wares.get(i);
 				break;
 			}
 			
@@ -75,6 +76,7 @@ public class SuperUser extends SuperSuper {
 		A.setAdmin(A);
 		A.setStore(S);
 		Stores.add(S);
+		S.setAdmin(A);
 		Store.Stores.add(S);
 		Store.Storess.add(S.getname());
 		return true;
@@ -136,17 +138,16 @@ public class SuperUser extends SuperSuper {
 	
 	
 	
-	public boolean CreateStoreAdmin(String wa,int max,String lid,String pass)
+	public boolean CreateStoreAdmin(String lid,String pass)
 	{
-		Warehouse w=null;
-		for(int i=0;i<SuperSuper.Wares.size();i++)
+		
+		for(int i=0;i<UserData.Storeadmin.size();i++)
 		{
-			if(SuperSuper.Wares.get(i).getname().equals(wa))
-				w=SuperSuper.Wares.get(i);
+			if(UserData.Storeadmin.get(i).getloginid().equals(lid))
+				return false;
 		}
-		if(w==null)
-			return false;
-		StoreAdministrator s=new StoreAdministrator(null, null, w, max, lid, pass);
+
+		StoreAdministrator s=new StoreAdministrator(lid, pass);
 		UserData.Storeadmin.add(s);
 		return true;
 	}
