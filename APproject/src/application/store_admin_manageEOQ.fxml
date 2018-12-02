@@ -53,6 +53,8 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -60,16 +62,20 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Select Item" />
-                  <Label text="Enter new D" GridPane.rowIndex="1" />
-                  <Label text="Enter new  H" GridPane.rowIndex="2" />
-                  <Label text="Enter new K" GridPane.rowIndex="3" />
-                  <TextField fx:id="TEXT1" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="TEXT2" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="TEXT3" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label text="EOQ" GridPane.rowIndex="4" />
-                  <Label fx:id="OUTPUT" text="EOQ will be displayed here" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="dropbox1" GridPane.columnIndex="1" />
+                  <Label text="Select Item" GridPane.rowIndex="2" />
+                  <Label text="Enter new D" GridPane.rowIndex="3" />
+                  <Label text="Enter new  H" GridPane.rowIndex="4" />
+                  <Label text="Enter new K" GridPane.rowIndex="5" />
+                  <TextField fx:id="TEXT1" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="TEXT2" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="TEXT3" promptText="Enter -1 for previous value" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="EOQ" GridPane.rowIndex="6" />
+                  <Label fx:id="OUTPUT" text="EOQ will be displayed here" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="dropbox1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Select Category" />
+                  <Label text="Select Sub category" GridPane.rowIndex="1" />
+                  <TextField fx:id="CATEGORY" GridPane.columnIndex="1" />
+                  <TextField fx:id="subCATEGORY" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />

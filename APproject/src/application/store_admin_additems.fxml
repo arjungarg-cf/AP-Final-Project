@@ -67,7 +67,7 @@
                               <Label text="Name of the Category" />
                            </children>
                         </GridPane>
-                        <Button fx:id="CREATE" layoutX="717.0" layoutY="117.0" mnemonicParsing="false" onAction="#delete_button_1" text="Create" />
+                        <Button fx:id="CREATE" layoutX="717.0" layoutY="117.0" mnemonicParsing="false" onAction="#create_cat" text="Create" />
                      </children>
                   </AnchorPane>
             </content>
@@ -92,7 +92,7 @@
                               <TextField fx:id="dropbox2" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button fx:id="CREATE2" layoutX="717.0" layoutY="117.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="CREATE2" layoutX="717.0" layoutY="117.0" mnemonicParsing="false" onAction="#create_sub" text="Create" />
                      </children>
                   </AnchorPane>
             </content>
@@ -126,7 +126,7 @@
                               <TextField fx:id="dropbox4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button fx:id="CREATE3" layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="CREATE3" layoutX="727.0" layoutY="229.0" mnemonicParsing="false" onAction="#create_item" text="Create" />
                      </children>
                   </AnchorPane>
               </content>

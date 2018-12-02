@@ -15,15 +15,17 @@ private Main ma;
 @FXML private javafx.scene.control.TextField TEXT1;
 @FXML private javafx.scene.control.TextField TEXT2;
 @FXML private javafx.scene.control.TextField TEXT3;
-@FXML private javafx.scene.control.ChoiceBox<String> dropbox1;
+@FXML private javafx.scene.control.TextField dropbox1;
+@FXML private javafx.scene.control.TextField CATEGORY;
+@FXML private javafx.scene.control.TextField subCATEGORY;
 @FXML private javafx.scene.control.TextField OUTPUT;
 
-@FXML
-	public void initialize() throws IOException
-	{
-		String store=Main.S.getStore().getname();
-		ArrayList<Item> it=EndUser.searchItem(store,String cat,String sub);
-	}
+//@FXML
+//	public void initialize() throws IOException
+//	{
+//		String store=Main.S.getStore().getname();
+//		ArrayList<Item> it=EndUser.searchItem(store,String cat,String sub);
+//	}
 	@FXML
 	private void goback() throws IOException
 	{
@@ -33,14 +35,17 @@ private Main ma;
 	@FXML
 	private void EOQ() throws IOException
 	{
-		String items= dropbox1.getValue();
+		String items= dropbox1.getText();
+		String cate= CATEGORY.getText();
+		String subcate=subCATEGORY.getText();
+		
 		int d= Integer.parseInt(TEXT1.getText());
 		//System.out.println(d);
 		int h=Integer.parseInt(TEXT2.getText());
 		int k=Integer.parseInt(TEXT3.getText());
 		
 		//System.out.println(d+h+k);
-		float a= Main.S.manageEOQ(cat, subcat, item, d, h, k);
+		float a= Main.S.manageEOQ(cate, subcate, items, d, h, k);
 		//write a to the answer place
 		System.out.println(a);
 		OUTPUT.setText(Float.toString(a));
