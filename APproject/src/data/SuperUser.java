@@ -4,6 +4,9 @@ import java.util.Iterator;
 
 public class SuperUser extends SuperSuper {
 	
+	/**
+	 * Login credentials of the SUper user
+	 */
 	private String LoginID,Password;
 	
 	public SuperUser(String id,String pass)
@@ -27,6 +30,12 @@ public class SuperUser extends SuperSuper {
 	}
 	
 	//other functions
+	/**
+	 * @param wadmin String name of the warehouse admin
+	 * @param name name of the warehouse
+	 * @param ID  id
+	 * @return boolean
+	 */
 	public boolean CreateWarehouse(String wadmin,String name,String ID)
 	{
 		WarehouseAdministrator A=null;
@@ -138,6 +147,11 @@ public class SuperUser extends SuperSuper {
 	
 	
 	
+	/**
+	 * @param lid String login id of the Strore admin
+	 * @param pass  password
+	 * @return boolean
+	 */
 	public boolean CreateStoreAdmin(String lid,String pass)
 	{
 		

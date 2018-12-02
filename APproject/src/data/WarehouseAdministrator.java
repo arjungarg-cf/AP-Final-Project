@@ -1,7 +1,20 @@
 package data;
 
+
+/**
+ * @author shankarprakriya
+ * This class describes Warehouse Admins
+ */
 public class WarehouseAdministrator extends Warehouse {
+	
+	/**
+	 *  String type Login credentials
+	 */
 	private String LoginID,Password;
+	
+	/**
+	 * Warehouse that the Warehosue administrator is linked to
+	 */
 	private Warehouse ownedware;
 	WarehouseAdministrator(String name, String id,String lid,String pass) {
 		super(name, id);	
@@ -12,6 +25,15 @@ public class WarehouseAdministrator extends Warehouse {
 		// TODO Auto-generated constructor stub
 	}
 	
+	/**
+	 * @param cat string name of Category
+	 * @param subcat String name of the sub category
+	 * @param item String name of the item
+	 * @param d
+	 * @param h
+	 * @param k
+	 * @return float EOQ of the Item
+	 */
 	float manageEOQ(String cat,String subcat,String item,int d,int h,int k)
 	{
 		Category s=null;
@@ -49,6 +71,10 @@ public class WarehouseAdministrator extends Warehouse {
 	}
 	
 	//Addition Codes:
+	/**
+	 * @param name String name of the category which has to be added
+	 * @return boolean value indiacting if the value can be added or not
+	 */
 	public boolean  addCat(String name)
 	{
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -200,6 +226,10 @@ public class WarehouseAdministrator extends Warehouse {
 	
 	
 	//Deletion Codes:
+	/**
+	 * @param c String name of the Category
+	 * @return boolean 
+	 */
 	public boolean deleteCategory(String c)
 	{
 		
