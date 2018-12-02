@@ -4,8 +4,8 @@ public class StoreAdministrator extends Store {
 	private String LoginID,Password;
 	private Store ownedstore;
 	
-	public StoreAdministrator(String storeid,String storename,Warehouse w,int max,String lid,String pass) {
-		super(storeid,storename,w,max);
+	public StoreAdministrator(String lid,String pass) {
+		super(null,null,null,0);
 		this.LoginID=lid;
 		this.Password=pass;
 		this.ownedstore=null;

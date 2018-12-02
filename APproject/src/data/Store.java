@@ -8,8 +8,8 @@ public class Store extends Superstore {
 	private Warehouse LinkedWare_obj;
 	private final int MaxItems;
 	private String ID,Name;
-	static ArrayList<String> Storess;
-	static ArrayList<Store> Stores;
+	public static ArrayList<String> Storess;
+	public static ArrayList<Store> Stores;
 	ArrayList<Category> Categories;
 	
 	Store(String id,String name,Warehouse w,int max){
