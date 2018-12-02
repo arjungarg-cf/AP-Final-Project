@@ -8,18 +8,18 @@ public class SuperUser extends SuperSuper {
 	
 	
 	//GETTERS AND SETTERS
-	String getloginid()
+	public String getloginid()
 	{
 		return this.LoginID;
 	}
 	
-	String getpass()
+	public String getpass()
 	{
 		return this.Password;
 	}
 	
 	//other functions
-	void CreateWarehouse(WarehouseAdministrator A,String name,String ID)
+	public void CreateWarehouse(WarehouseAdministrator A,String name,String ID)
 	{
 		Warehouse W=new Warehouse(name,ID);
 		Wares.add(W);
@@ -29,7 +29,7 @@ public class SuperUser extends SuperSuper {
 		A.setAdmin(A);
 	}
 
-	void CreateStore(StoreAdministrator A,String id,Warehouse w,String n,int m) {
+	public void CreateStore(StoreAdministrator A,String id,Warehouse w,String n,int m) {
 		Store S=new Store(id, n, w, m);
 		A.setAdmin(A);
 		A.setStore(S);
@@ -39,7 +39,7 @@ public class SuperUser extends SuperSuper {
 		
 	}
 	
-	Store ViewStore(String store) {
+	public Store ViewStore(String store) {
 		for(int i=0;i<Store.Storess.size();i++)
 		{
 			if(store.equals(Store.Stores.get(i).getname()))
@@ -49,7 +49,7 @@ public class SuperUser extends SuperSuper {
 		
 	}
 	
-	Warehouse ViewWarehouse(String ware)
+	public Warehouse ViewWarehouse(String ware)
 	{
 		for(int i=0;i<Warehouse.Wares.size();i++)
 		{
@@ -59,7 +59,7 @@ public class SuperUser extends SuperSuper {
 		return null;
 	}
 	
-	void LinkStoW(String s,String w)
+	public void LinkStoW(String s,String w)
 	{
 		Store st=null;
 		for(int i=0;i<Store.Storess.size();i++)
@@ -78,13 +78,13 @@ public class SuperUser extends SuperSuper {
 			
 	}
 	
-	void CreateWarehouseadmin(String lid,String pass) {
+	public void CreateWarehouseadmin(String lid,String pass) {
 		WarehouseAdministrator W=new WarehouseAdministrator(null, null, lid, pass);
 		UserData.Wareadmin.add(W);
 		
 	}
 	
-	void CreateStoreAdmin(Warehouse w,int max,String lid,String pass)
+	public void CreateStoreAdmin(Warehouse w,int max,String lid,String pass)
 	{
 		StoreAdministrator s=new StoreAdministrator(null, null, w, max, lid, pass);
 		UserData.Storeadmin.add(s);
