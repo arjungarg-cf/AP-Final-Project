@@ -3,8 +3,8 @@ package data;
 import java.util.ArrayList;
 
 public class SuperSuper {
-	static ArrayList<Warehouse> Wares;
-	static ArrayList<Store> Stores;
+	public static ArrayList<Warehouse> Wares;
+	public static ArrayList<Store> Stores;
 	
 
 }
