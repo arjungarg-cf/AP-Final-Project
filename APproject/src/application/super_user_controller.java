@@ -44,6 +44,7 @@ public class super_user_controller {
 		Store s=Main.Su.ViewStore(store);
 		ma.show_view_store();
 	}
+	
 	@FXML
 	private void goviewwarehouse() throws IOException
 	{
