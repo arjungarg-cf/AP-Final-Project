@@ -13,7 +13,7 @@ public class EndUser{
 //		
 //	}
 //	
-	static ArrayList<Category> searchCat(String store)
+	public static ArrayList<Category> searchCat(String store)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
@@ -31,7 +31,7 @@ public class EndUser{
 	
 	}
 	
-	static ArrayList<Sub_Category> searchSubcat(String store,String cat)
+	public static ArrayList<Sub_Category> searchSubcat(String store,String cat)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
@@ -58,7 +58,7 @@ public class EndUser{
 		
 	}
 	
-	static ArrayList<Item> searchItem(String store,String cat,String sub)
+	public static ArrayList<Item> searchItem(String store,String cat,String sub)
 	{
 		Store s=null;
 		for(int i=0;i<Store.Stores.size();i++)
@@ -92,7 +92,7 @@ public class EndUser{
 			return null;
 	}
 	
-	ArrayList<String> getAllItems(){
+	public ArrayList<String> getAllItems(){
 		ArrayList<String> r=new ArrayList<String>();
 		for(int i=0;i<Store.Stores.size();i++)
 		{
@@ -116,7 +116,7 @@ public class EndUser{
 		return r;
 	}
 	
-	ArrayList<String> SearchItem(String name)
+	public ArrayList<String> SearchItem(String name)
 	{
 		ArrayList<String> r=this.getAllItems();
 		ArrayList<String> r1=new ArrayList<String>();

@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.browse2_controller">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.browse3_controller">
    <top>
       <HBox prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="Back" mnemonicParsing="false" onAction="#goback" text="Back" />
-            <Label text="Browse categories" textFill="#fcfcfc">
+            <Label text="Browse items" textFill="#fcfcfc">
                <font>
                   <Font size="24.0" />
                </font>
@@ -28,7 +28,7 @@
    <bottom>
       <HBox prefHeight="78.0" prefWidth="400.0" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="17.0" prefWidth="271.0" text="Enter selected categories">
+            <Label prefHeight="17.0" prefWidth="271.0" text="Enter selected items">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
