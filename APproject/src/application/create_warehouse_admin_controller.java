@@ -8,11 +8,18 @@ import application.Main;
 public class create_warehouse_admin_controller {
 	private Main ma;
 	@FXML private javafx.scene.control.Button Back;
+	@FXML private javafx.scene.control.TextField id;
+	@FXML private javafx.scene.control.TextField pass;
 	
 	@FXML
 	private void gocreate() throws IOException
 	{
+		String i=id.getText();
+		String p=pass.getText();
+		if(Main.Su.CreateWarehouseadmin(i, p))
 		ma.create_warehouse_admin_after();
+		else
+			System.out.println("ID exists");
 	}
 	@FXML
 	private void goback() throws IOException

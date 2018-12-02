@@ -1,10 +1,6 @@
 package data;
 
-import java.util.ArrayList;
-
-import javax.jws.soap.SOAPBinding.Use;
-
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion.User;
+import java.util.Iterator;
 
 public class SuperUser extends SuperSuper {
 	
@@ -23,19 +19,31 @@ public class SuperUser extends SuperSuper {
 	}
 	
 	//other functions
-	public void CreateWarehouse(WarehouseAdministrator A,String name,String ID)
+	public boolean CreateWarehouse(String wadmin,String name,String ID)
 	{
+		WarehouseAdministrator A=null;
+		for (int i = 0; i < UserData.Wareadmin.size(); i++) {
+			if(UserData.Wareadmin.get(i).getname().equals(wadmin))
+			{
+				A=UserData.Wareadmin.get(i);
+				break;
+			}
+			
+		}
+		if(A==null)
+			return false;
 		Warehouse W=new Warehouse(name,ID);
 		Wares.add(W);
 		Warehouse.Wares.add(W);
 		Warehouse.Waress.add(W.getname());
-		A.setWare(W);
+		A.setWare(W);	
 		A.setAdmin(A);
+		return true;
 	}
 	
 	
 
-	public boolean CreateStore(String b,String id,Warehouse w,String n,int m) {
+	public boolean CreateStore(String b,String id,String ware,String n,int m) {
 		StoreAdministrator A=null;
 		for(int i=0;i<UserData.Storeadmin.size();i++)
 		{
@@ -43,6 +51,17 @@ public class SuperUser extends SuperSuper {
 				A=UserData.Storeadmin.get(i);
 		}
 		if(A==null)
+			return false;
+		WarehouseAdministrator w=null;
+		for (int i = 0; i < UserData.Wareadmin.size(); i++) {
+			if(UserData.Wareadmin.get(i).getname().equals(ware))
+			{
+				w=UserData.Wareadmin.get(i);
+				break;
+			}
+			
+		}
+		if(w==null)
 			return false;
 		Store S=new Store(id, n, w, m);
 		A.setAdmin(A);
@@ -93,9 +112,15 @@ public class SuperUser extends SuperSuper {
 			
 	}
 	
-	public void CreateWarehouseadmin(String lid,String pass) {
+	public boolean CreateWarehouseadmin(String lid,String pass) {
+		for(int i=0;i<UserData.Wareadmin.size();i++)
+		{
+			if(UserData.Wareadmin.get(i).getID().equals(lid))
+				return false;
+		}
 		WarehouseAdministrator W=new WarehouseAdministrator(null, null, lid, pass);
 		UserData.Wareadmin.add(W);
+		return true;
 		
 	}
 	
