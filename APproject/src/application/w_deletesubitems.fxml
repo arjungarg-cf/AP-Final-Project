@@ -67,7 +67,7 @@
                               <TextField fx:id="cboxcat" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button fx:id="delcat" layoutX="332.0" layoutY="103.0" mnemonicParsing="false" onAction="#delete_button" text="Delete" />
+                        <Button fx:id="delcat" layoutX="332.0" layoutY="103.0" mnemonicParsing="false" onAction="#delcat" text="Delete" />
                      </children>
                   </AnchorPane>
             </content>
@@ -93,7 +93,7 @@
                               <TextField fx:id="subboxsubcat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button fx:id="delsubcat" layoutX="498.0" layoutY="122.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="delsubcat" layoutX="498.0" layoutY="122.0" mnemonicParsing="false" onAction="#delsubcat" text="Delete" />
                      </children>
                   </AnchorPane>
             </content>
@@ -121,7 +121,7 @@
                               <TextField fx:id="subboxitem" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button fx:id="delitem" layoutX="514.0" layoutY="181.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="delitem" layoutX="514.0" layoutY="181.0" mnemonicParsing="false" onAction="#delitem" text="Delete" />
                      </children>
                   </AnchorPane>
               </content>
