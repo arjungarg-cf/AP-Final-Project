@@ -2,12 +2,32 @@ package data;
 
 import java.util.ArrayList;
 
+
+/**
+ * @author shankarprakriya
+ * This class is for warehouses 
+ */
 public class Warehouse extends Superstore {
+	/**
+	 *  Warehouse administrator 
+	 */
 	private WarehouseAdministrator Admin;
+	/**
+	 *  String value of the login ID and Name of the Warehouse
+	 */
 	private String ID,Name;
+	/**
+	 *  ArrayList of Category type objects
+	 */
 	public ArrayList<Category> Categories;
 
+	/**
+	 *  ArrayList having String type name value of all warehouses
+	 */
 	public static ArrayList<String> Waress;
+	/**
+	 *  ArrayList having Warehosue type objects of all warehouses
+	 */
 	public static ArrayList<Warehouse> Wares;
 	
 	//CONSTRUCTOR
@@ -62,6 +82,10 @@ public class Warehouse extends Superstore {
 		return this.ID;
 	}
 	
+	/**
+	 * @param cat is String type name of the Category 
+	 * @return returns Category type object reference of the Category whos name was passed as parameter
+	 */
 	public Category getCat(String cat)
 	{
 		for(Category i:Categories) {
