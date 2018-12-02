@@ -26,7 +26,7 @@ public class Store extends Superstore {
 	 *  String type ID and Name of the Store
 	 */
 	private String ID,Name;
-<<<<<<< HEAD
+
 	/**
 	 * Storess is a String type Arraylist holding Names of all the Stores made 
 	 */
@@ -38,10 +38,7 @@ public class Store extends Superstore {
 	/**
 	 * Categories is an ArrayList of Category type objects which contains the entire database of Items that the store has
 	 */
-=======
-	public static ArrayList<String> Storess;
-	public static ArrayList<Store> Stores;
->>>>>>> branch 'master' of https://github.com/arjun-garg/AP-Final-Project.git
+
 	ArrayList<Category> Categories;
 	
 	//Constructor
