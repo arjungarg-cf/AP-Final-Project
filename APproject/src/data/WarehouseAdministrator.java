@@ -214,6 +214,8 @@ public class WarehouseAdministrator extends Warehouse {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
@@ -226,7 +228,7 @@ public class WarehouseAdministrator extends Warehouse {
 		
 	}
 	
-	boolean deleteItem(String cat,String subcat,String item)
+	public boolean deleteItem(String cat,String subcat,String item)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -238,13 +240,16 @@ public class WarehouseAdministrator extends Warehouse {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		Sub_Category sub=null;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
 				sub=s.subcat.get(i);
 		}
-		
+		if(sub==null)
+			return false;
 		for(int i=0;i<sub.Items.size();i++)
 		{
 			if(item.equals(sub.Items.get(i).getname()))

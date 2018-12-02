@@ -61,6 +61,15 @@ public class Warehouse extends Superstore {
 	{
 		return this.ID;
 	}
+	
+	public Category getCat(String cat)
+	{
+		for(Category i:Categories) {
+			if(i.getname().equals(cat))
+				return i;
+		}
+		return null;
+	}
 
 
 }
