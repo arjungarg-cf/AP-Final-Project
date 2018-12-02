@@ -66,7 +66,7 @@ private Main ma;
 		String cat=cboxitem.getText();
 		String subcat=subboxitem.getText();
 		String item=itemboxitem.getText();
-		if(Main.W.deleteItem(cat, subcat, item)
+		if(Main.W.deleteItem(cat, subcat, item))
 				{
 			ma.go_delete_button();
 				}

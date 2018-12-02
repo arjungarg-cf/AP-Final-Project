@@ -218,6 +218,8 @@ public class StoreAdministrator extends Store {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
@@ -242,13 +244,18 @@ public class StoreAdministrator extends Store {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		Sub_Category sub=null;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
-				sub=s.subcat.get(i);
+			{	sub=s.subcat.get(i);
+				break;
+			}
 		}
-		
+		if(sub==null)
+			return false;
 		for(int i=0;i<sub.Items.size();i++)
 		{
 			if(item.equals(sub.Items.get(i).getname()))

@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.store_admin_delete_items_controller">
+<BorderPane prefHeight="562.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.store_admin_delete_items_controller">
    <top>
       <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
@@ -64,10 +64,10 @@
                           </rowConstraints>
                            <children>
                               <Label text="Select Category" />
-                              <TextField GridPane.columnIndex="1" />
+                              <TextField fx:id="cboxcat" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="332.0" layoutY="103.0" mnemonicParsing="false" onAction="#delete_button" text="Delete" />
+                        <Button fx:id="delcat" layoutX="332.0" layoutY="103.0" mnemonicParsing="false" onAction="#delcat" text="Delete" />
                      </children>
                   </AnchorPane>
             </content>
@@ -89,11 +89,11 @@
                            <children>
                               <Label text="Select Category:" />
                               <Label text="Select Sub-category" GridPane.rowIndex="1" />
-                              <TextField GridPane.columnIndex="1" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="cboxsubcat" GridPane.columnIndex="1" />
+                              <TextField fx:id="subboxsubcat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="498.0" layoutY="122.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="delsubcat" layoutX="498.0" layoutY="122.0" mnemonicParsing="false" onAction="#delsubcat" text="Delete" />
                      </children>
                   </AnchorPane>
             </content>
@@ -116,12 +116,12 @@
                               <Label text="Enter Category" />
                               <Label text="Enter Sub-category" GridPane.rowIndex="1" />
                               <Label text="Select Item" GridPane.rowIndex="2" />
-                              <TextField GridPane.columnIndex="1" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="cboxitem" GridPane.columnIndex="1" />
+                              <TextField fx:id="subboxitem" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="itemboxitem" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <Button layoutX="514.0" layoutY="181.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="delitem" layoutX="514.0" layoutY="181.0" mnemonicParsing="false" onAction="#delitem" text="Delete" />
                      </children>
                   </AnchorPane>
               </content>
