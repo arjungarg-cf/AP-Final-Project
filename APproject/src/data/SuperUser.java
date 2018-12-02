@@ -32,6 +32,8 @@ public class SuperUser extends SuperSuper {
 		A.setWare(W);
 		A.setAdmin(A);
 	}
+	
+	
 
 	public boolean CreateStore(String b,String id,Warehouse w,String n,int m) {
 		StoreAdministrator A=null;
