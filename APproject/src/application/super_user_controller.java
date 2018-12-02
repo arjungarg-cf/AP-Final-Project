@@ -4,13 +4,15 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import application.Main;
+import data.Store;
 
 public class super_user_controller {
 	private Main ma;
 	@FXML private javafx.scene.control.Button Home;
 	@FXML private javafx.scene.control.Button Back;
 	@FXML private javafx.scene.control.Button Logout;
-	
+	@FXML private javafx.scene.control.TextField waretext;
+	@FXML private javafx.scene.control.TextField storetext;
 	@FXML
 	private void goback() throws IOException
 	{
@@ -38,6 +40,8 @@ public class super_user_controller {
 	@FXML
 	private void goviewstore() throws IOException
 	{
+		String store=storetext.getText();
+		Store s=Main.Su.ViewStore(store);
 		ma.show_view_store();
 	}
 	@FXML
