@@ -15,14 +15,20 @@ public class end_user_actual_entry_controller {
 		Stage stage=(Stage) Back.getScene().getWindow();
 		stage.close();
 	}
+	//this is the availability finction
 	@FXML
 	private void go_search_from_end_user() throws IOException
 	{
 		ma.go_searching_from_end();
 	}
+	
 	@FXML
-	private void go_availability() throws IOException
+	private void gobrowse() throws IOException
 	{
-		ma.go_end_user_availability();
+		ma.load_browse1();
 	}
+	
 }
+
+
+

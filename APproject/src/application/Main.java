@@ -729,7 +729,7 @@ public class Main extends Application {
 	
 	public static void go_search_from_category() throws IOException
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_search_from_category.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_subcategory_avail.fxml"));
 //		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
 //		BorderPane super1 = loader.load();
 //		mainLayout.setCenter(super1);
@@ -742,7 +742,7 @@ public class Main extends Application {
 	}
 	public static void go_search_from_sub() throws IOException
 	{
-		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_check_availability.fxml"));
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_search_from_category.fxml"));
 //		loader.setLocation(Main.class.getResource("after_store_admin_adds_items.fxml"));
 //		BorderPane super1 = loader.load();
 //		mainLayout.setCenter(super1);
@@ -753,6 +753,19 @@ public class Main extends Application {
 		stage.show();
 //	
 	}
+	public static void go_search_from_item() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_check_availability.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
 	
 	public static void go_searching_from_end() throws IOException    // go to end user base
 	{
@@ -827,6 +840,67 @@ public class Main extends Application {
 		stage.setScene(new Scene(root1));
 		stage.show();
 	}
+	
+	
+	
+	//end user another addn
+	public static void load_browse1() throws IOException    
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("browse_store.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	public static void load_browse2() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("end_user_browse.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	public static void load_browse3() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("browse_subcate.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	public static void load_browse4() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("browse_items.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
