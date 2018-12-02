@@ -22,13 +22,13 @@ private Main ma;
 @FXML private javafx.scene.control.TextField  nameitem;
 @FXML private javafx.scene.control.TextField costitem;
 @FXML private javafx.scene.control.TextField quantitem;
-@FXML private javafx.scene.control.ChoiceBox<String> cboxcat;
-@FXML private javafx.scene.control.ChoiceBox<String> catboxsub;
-@FXML private javafx.scene.control.ChoiceBox<String> subcatboxsub;
-@FXML private javafx.scene.control.ChoiceBox<String> catboxitem;
-@FXML private javafx.scene.control.ChoiceBox<String> subcatboxitem;
-@FXML private javafx.scene.control.ChoiceBox<String> itemcatboxitem;
-@FXML private javafx.scene.control.ChoiceBox<String> itemboxitem;
+@FXML private javafx.scene.control.TextField cboxcat;
+@FXML private javafx.scene.control.TextField catboxsub;
+@FXML private javafx.scene.control.TextField subcatboxsub;
+@FXML private javafx.scene.control.TextField catboxitem;
+@FXML private javafx.scene.control.TextField subcatboxitem;
+@FXML private javafx.scene.control.TextField itemcatboxitem;
+@FXML private javafx.scene.control.TextField itemboxitem;
 
 
 	
@@ -41,13 +41,13 @@ private Main ma;
 //
 
 	//To be changed
-	public void initialize() {
-		// TODO Auto-generated method stub
-		ArrayList<Category> cats=Main.W.getWare().Categories;
-		cats.sort(null);
-		
-		
-	}
+//	public void initialize() {
+//		// TODO Auto-generated method stub
+//		ArrayList<Category> cats=Main.W.getWare().Categories;
+//		cats.sort(null);
+//		
+//		
+//	}
 
 	@FXML
 	private void goback() throws IOException
@@ -65,8 +65,15 @@ private Main ma;
 	private void editcat() throws IOException
 	{
 		String name=tboxcat.getText();
-		String cat=cboxcat.getValue();
-		Main.W.updateCat(cat,name);
+		String cat=cboxcat.getText();
+		if(Main.W.updateCat(cat,name))
+		{
+			ma.goeditingfrom_warehouse();
+		}
+		else
+		{
+			System.out.println("cat not found");
+		}
 	}
 	
 
@@ -74,21 +81,29 @@ private Main ma;
 	private void editsubcat() throws IOException
 	{
 		String name=tboxsub.getText();
-		String cat=catboxsub.getValue();
-		String subcat=subcatboxsub.getValue();
-		Main.W.updateSubcat(cat, subcat, name);
+		String cat=catboxsub.getText();
+		String subcat=subcatboxsub.getText();
+		
+		if(Main.W.updateSubcat(cat, subcat, name))
+			ma.goeditingfrom_warehouse();
+		else
+			System.out.println("subcat not found");
+		
 	}
 	
 	@FXML 
 	private void edititem() throws IOException
 	{
 		String name=nameitem.getText();
-		String cat=catboxitem.getValue();
-		String subcat=subcatboxitem.getValue();
-		String item=itemboxitem.getValue();
+		String cat=catboxitem.getText();
+		String subcat=subcatboxitem.getText();
+		String item=itemboxitem.getText();
 		int cost=Integer.parseInt(costitem.getText());
 		int quant=Integer.parseInt(quantitem.getText());
-		Main.W.updateItem(cat, subcat, item, name, cost, quant);
+		if(Main.W.updateItem(cat, subcat, item, name, cost, quant))
+			ma.goeditingfrom_warehouse();
+		else
+			System.out.println("item not found");
 	}
 	
 	

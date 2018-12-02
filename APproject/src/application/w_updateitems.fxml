@@ -68,7 +68,7 @@
                               <TextField fx:id="tboxcat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <Label text="New Name:" GridPane.rowIndex="1" />
                               <Label text="Select Category" />
-                              <ChoiceBox fx:id="cboxcat" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="cboxcat" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
                         <Button layoutX="734.0" layoutY="117.0" mnemonicParsing="false" onAction="#editcat" text="Edit" />
@@ -95,9 +95,9 @@
                               <Label text="Select Category:" />
                               <Label text="New name of Sub-category" GridPane.rowIndex="2" />
                               <TextField fx:id="tboxsub" prefHeight="60.0" prefWidth="368.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <ChoiceBox fx:id="catboxsub" prefWidth="150.0" GridPane.columnIndex="1" />
                               <Label text="Select Sub-category" GridPane.rowIndex="1" />
-                              <ChoiceBox fx:id="subcatboxsub" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="catboxsub" GridPane.columnIndex="1" />
+                              <TextField fx:id="subcatboxsub" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
                         <Button fx:id="editsubcat" layoutX="731.0" layoutY="154.0" mnemonicParsing="false" onAction="#editsubcat" text="Edit" />
