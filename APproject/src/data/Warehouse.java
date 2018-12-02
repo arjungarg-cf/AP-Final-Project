@@ -7,8 +7,8 @@ public class Warehouse extends Superstore {
 	private String ID,Name;
 	public ArrayList<Category> Categories;
 
-	static ArrayList<String> Waress;
-	static ArrayList<Warehouse> Wares;
+	public static ArrayList<String> Waress;
+	public static ArrayList<Warehouse> Wares;
 	
 	//CONSTRUCTOR
 	Warehouse(String name,String id)
@@ -52,12 +52,12 @@ public class Warehouse extends Superstore {
 		this.Admin=a;
 	}
 	
-	String getname()
+	public String getname()
 	{
 		return this.Name;
 	}
 	
-	String getID()
+	public String getID()
 	{
 		return this.ID;
 	}

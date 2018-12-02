@@ -3,6 +3,7 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import application.Main;
+import data.UserData;
 public class login_store_admin_controller {
 	private Main ma;
 	@FXML private javafx.scene.control.Button BACK;
@@ -23,10 +24,20 @@ public class login_store_admin_controller {
 	{
 		String x=TEXT1.getText();
 		String y=TEXT2.getText();
-		
-		
-		ma.login_from_store_admin();
-		
+		boolean suc=false;
+		for(int i=0;i<UserData.Storeadmin.size();i++)
+		{
+			if(UserData.Storeadmin.get(i).getID().equals(x) && UserData.Storeadmin.get(i).getpass().equals(y))
+			{
+				suc=true;
+				Main.S=UserData.Storeadmin.get(i);
+				break;
+			}
+		}
+		if(suc)
+			ma.login_from_store_admin();
+		else
+			System.out.println("ID and pass dont match");
 		
 	}
 	

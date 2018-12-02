@@ -23,7 +23,7 @@ public class end_user_check_availibilty_controller {
 	@FXML
 	private void go_search() throws IOException
 	{
-		ma.gosearch_from_item();
+		ma.go_search_from_item();
 	}
 
 }

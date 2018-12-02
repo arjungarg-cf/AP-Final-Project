@@ -6,9 +6,17 @@ public class SuperUser extends SuperSuper {
 	
 	private String LoginID,Password;
 	
+	public SuperUser(String id,String pass)
+	{
+		super();
+		this.LoginID=id;
+		this.Password=pass;
+	}
+	
+	
 	
 	//GETTERS AND SETTERS
-	public String getloginid()
+	public String getid()
 	{
 		return this.LoginID;
 	}
@@ -115,11 +123,13 @@ public class SuperUser extends SuperSuper {
 	public boolean CreateWarehouseadmin(String lid,String pass) {
 		for(int i=0;i<UserData.Wareadmin.size();i++)
 		{
-			if(UserData.Wareadmin.get(i).getID().equals(lid))
+			
+			if(UserData.Wareadmin.get(i).getid().equals(lid))
 				return false;
 		}
 		WarehouseAdministrator W=new WarehouseAdministrator(null, null, lid, pass);
 		UserData.Wareadmin.add(W);
+		
 		return true;
 		
 	}

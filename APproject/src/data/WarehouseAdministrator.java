@@ -282,12 +282,12 @@ public class WarehouseAdministrator extends Warehouse {
 	{
 		return this.ownedware;
 	}
-	String getloginid()
+	public String getid()
 	{
 		return this.LoginID;
 	}
 	
-	String getpass()
+	public String getpass()
 	{
 		return this.Password;
 	}

@@ -1,8 +1,12 @@
 package application;
 import java.io.IOException;
+import java.util.ArrayList;
 
+import data.EndUser;
 import data.StoreAdministrator;
 import data.SuperUser;
+import data.UserData;
+import data.Warehouse;
 import data.WarehouseAdministrator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -904,6 +908,14 @@ public class Main extends Application {
 	
 	
 	public static void main(String[] args) {
+		UserData.Endusers=new ArrayList<EndUser>();
+		UserData.Storeadmin=new ArrayList<StoreAdministrator>();
+		UserData.Superusers=new ArrayList<SuperUser>();
+		UserData.Wareadmin=new ArrayList<WarehouseAdministrator>();
+		Warehouse.Wares=new ArrayList<Warehouse>();
+		Warehouse.Waress=new ArrayList<String>();
+		Su=new SuperUser("admin","pass");
+		UserData.Superusers.add(Su);
 		launch(args);
 	}
 }
