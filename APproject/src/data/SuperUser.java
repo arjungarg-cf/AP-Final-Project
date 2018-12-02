@@ -86,6 +86,8 @@ public class SuperUser extends SuperSuper {
 	
 	
 	
+	
+	
 	public void CreateStoreAdmin(Warehouse w,int max,String lid,String pass)
 	{
 		StoreAdministrator s=new StoreAdministrator(null, null, w, max, lid, pass);
