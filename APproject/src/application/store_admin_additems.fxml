@@ -18,7 +18,7 @@
    <top>
       <VBox prefHeight="115.0" prefWidth="814.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="Back" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
+            <Button fx:id="BACK" cancelButton="true" mnemonicParsing="false" onAction="#goback" text="s--Back" />
             <Label text="Login ID">
                <VBox.margin>
                   <Insets bottom="10.0" left="750.0" top="-30.0" />
@@ -92,7 +92,7 @@
                               <TextField fx:id="dropbox2" GridPane.columnIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="717.0" layoutY="117.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="CREATE2" layoutX="717.0" layoutY="117.0" mnemonicParsing="false" text="Create" />
                      </children>
                   </AnchorPane>
             </content>
@@ -126,7 +126,7 @@
                               <TextField fx:id="dropbox4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
-                        <Button layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="CREATE3" layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
                      </children>
                   </AnchorPane>
               </content>

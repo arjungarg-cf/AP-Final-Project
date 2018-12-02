@@ -51,7 +51,7 @@ public class StoreAdministrator extends Store {
 	
 	
 	//Addition codes all copied from warehouse might want to check
-	boolean  addCat(String name)
+	public boolean  addCat(String name)
 	{
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
 		{
@@ -68,7 +68,7 @@ public class StoreAdministrator extends Store {
 	}
 	
 
-	boolean addSubcat(String cat,String subcat)
+	public boolean addSubcat(String cat,String subcat)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -90,7 +90,7 @@ public class StoreAdministrator extends Store {
 		return true;
 	}
 	
-	boolean addItem(String cat,String subcat,String name,float cost,int quant)
+	public boolean addItem(String cat,String subcat,String name,float cost,int quant)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -121,7 +121,7 @@ public class StoreAdministrator extends Store {
 	
 
 	//Updating Codes:
-	void updateCat(String cat,String name)
+	public void updateCat(String cat,String name)
 	{
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
 		{
@@ -135,7 +135,7 @@ public class StoreAdministrator extends Store {
 		}
 	}
 	
-	void updateSubcat(String cat,String subcat,String name)
+	public void updateSubcat(String cat,String subcat,String name)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -155,7 +155,7 @@ public class StoreAdministrator extends Store {
 		
 	}
 	
-	void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
+	public void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -190,7 +190,7 @@ public class StoreAdministrator extends Store {
 	
 
 	//Deletion Codes:
-	boolean deleteCategory(String c)
+	public boolean deleteCategory(String c)
 	{
 		
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -206,7 +206,7 @@ public class StoreAdministrator extends Store {
 		return false;
 	}
 	
-	boolean deleteSubCategory(String cat,String subcat)
+	public boolean deleteSubCategory(String cat,String subcat)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -230,7 +230,7 @@ public class StoreAdministrator extends Store {
 		
 	}
 	
-	boolean deleteItem(String cat,String subcat,String item)
+	public boolean deleteItem(String cat,String subcat,String item)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedstore.Categories.size();i++)
@@ -261,16 +261,16 @@ public class StoreAdministrator extends Store {
 
 	
 	
-	void setStore(Store s)
+	public void setStore(Store s)
 	{
 		this.ownedstore=s;
 	}
-	String getloginid()
+	public String getloginid()
 	{
 		return this.LoginID;
 	}
 	
-	String getpass()
+	public String getpass()
 	{
 		return this.Password;
 	}
