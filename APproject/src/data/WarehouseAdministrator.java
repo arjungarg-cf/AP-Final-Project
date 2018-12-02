@@ -118,20 +118,22 @@ public class WarehouseAdministrator extends Warehouse {
 	}
 	
 	//Updating Codes:
-	public void updateCat(String cat,String name)
+	public boolean updateCat(String cat,String name)
 	{
 		for(int i=0;i<this.ownedware.Categories.size();i++)
 		{
 			if(cat.equals(this.ownedware.Categories.get(i).getname()))
 			{
 				this.ownedware.Categories.get(i).setname(name);
-				break;
+				return true;
+				
 			}
 			
 		}
+		return false;
 	}
 	
-	public void updateSubcat(String cat,String subcat,String name)
+	public boolean updateSubcat(String cat,String subcat,String name)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -143,15 +145,22 @@ public class WarehouseAdministrator extends Warehouse {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
+			{
 				s.subcat.get(i).setname(name);
+				return true;
+			}
+				
 		}
+		return false;
 		
 	}
 	
-	public void updateItem(String cat,String subcat,String item,String name,int cost,int quant)
+	public boolean updateItem(String cat,String subcat,String item,String name,int cost,int quant)
 	{
 		Category s=null;
 		for(int i=0;i<this.ownedware.Categories.size();i++)
@@ -163,13 +172,16 @@ public class WarehouseAdministrator extends Warehouse {
 			}
 			
 		}
+		if(s==null)
+			return false;
 		Sub_Category sub=null;
 		for(int i=0;i<s.subcat.size();i++)
 		{
 			if(subcat.equals(s.subcat.get(i).getname()))
 				sub=s.subcat.get(i);
 		}
-		
+		if(subcat==null)
+			return false;
 		for(int i=0;i<sub.Items.size();i++)
 		{
 			if(item.equals(sub.Items.get(i).getname()))
@@ -180,8 +192,10 @@ public class WarehouseAdministrator extends Warehouse {
 					sub.Items.get(i).setcost(cost);
 				if(quant!=-1)
 					sub.Items.get(i).setquantity(quant);
+				return true;
 			}
 		}
+		return false;
 	}
 	
 	
