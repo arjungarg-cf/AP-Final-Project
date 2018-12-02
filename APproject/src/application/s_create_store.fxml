@@ -57,12 +57,6 @@
                               <TextField fx:id="id" opacity="0.4" text="ID of store" GridPane.columnIndex="1" />
                               <TextField fx:id="store" opacity="0.52" text="Name of store" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <TextField fx:id="store_admin" opacity="0.57" text="Store Administrator" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <MenuButton mnemonicParsing="false" opacity="0.47" text="List of warehouses" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                <items>
-                                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                                  <MenuItem mnemonicParsing="false" text="Action 2" />
-                                </items>
-                              </MenuButton>
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
                               <Label text="Administrator" GridPane.rowIndex="2" />
                               <Label text="Linked warehouse" GridPane.rowIndex="3" />

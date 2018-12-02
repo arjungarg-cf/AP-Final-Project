@@ -900,8 +900,33 @@ public class Main extends Application {
 		stage.show();
 	}
 	
+
+	public static void create_store_admin_after() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("after_store_admin_created.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
 	
 	
+	public static void open_create_new_store_admin() throws IOException    // go to end user base
+	{
+		FXMLLoader loader= new FXMLLoader(Main.class.getResource("s_create_store_admin.fxml"));
+		//loader.setLocation(Main.class.getResource("end_user_entry.fxml"));
+		//BorderPane super1 = loader.load();
+		//mainLayout.setCenter(super1);
+		Stage stage=new Stage();
+		Parent root1=(Parent) loader.load();
+		stage.setTitle("End User");
+		stage.setScene(new Scene(root1));
+		stage.show();
+	}
 	
 	
 	

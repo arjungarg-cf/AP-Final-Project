@@ -33,12 +33,12 @@
                   <Insets left="10.0" />
                </HBox.margin>
             </Label>
-            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#go_search" text="Select">
+            <Button fx:id="SELECT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#go_search" text="Select">
                <HBox.margin>
                   <Insets right="90.0" top="50.0" />
                </HBox.margin>
             </Button>
-            <TextField>
+            <TextField fx:id="TEXT1">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
@@ -49,7 +49,7 @@
    <center>
       <HBox prefHeight="235.0" prefWidth="400.0" BorderPane.alignment="CENTER">
          <children>
-            <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="400.0" />
+            <TextArea fx:id="area1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="400.0" />
          </children>
       </HBox>
    </center>

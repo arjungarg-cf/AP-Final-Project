@@ -9,6 +9,9 @@ public class browse1_controller {
 	private Main ma;
 	
 	@FXML private javafx.scene.control.Button Back;
+	@FXML private javafx.scene.control.Button SELECT;
+	@FXML private javafx.scene.control.TextField TEXT1;
+	@FXML private javafx.scene.control.TextArea area1;
 	@FXML
 	private void goback() throws IOException
 	{

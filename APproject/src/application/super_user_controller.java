@@ -62,6 +62,11 @@ public class super_user_controller {
 //	}
 	
 	@FXML
+	private void gocreatenewstore_admin() throws IOException
+	{
+		ma.open_create_new_store_admin();
+	}
+	@FXML
 	private void golink() throws IOException
 	{
 		ma.link_store_warehouse();

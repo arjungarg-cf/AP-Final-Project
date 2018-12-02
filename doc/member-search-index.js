@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"data","c":"Category","l":"compareTo(Category)","url":"compareTo-data.Category-"}]
