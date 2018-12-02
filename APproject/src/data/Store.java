@@ -30,11 +30,11 @@ public class Store extends Superstore {
 	/**
 	 * Storess is a String type Arraylist holding Names of all the Stores made 
 	 */
-	static ArrayList<String> Storess;
+	public static ArrayList<String> Storess;
 	/**
 	 *  Stores is a Store type ArrayList holding store type references to all Stores made
 	 */
-	static ArrayList<Store> Stores;
+	public static ArrayList<Store> Stores;
 	/**
 	 * Categories is an ArrayList of Category type objects which contains the entire database of Items that the store has
 	 */
