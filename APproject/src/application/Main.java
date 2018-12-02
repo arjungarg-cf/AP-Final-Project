@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import data.EndUser;
 import data.StoreAdministrator;
+import data.SuperSuper;
 import data.SuperUser;
 import data.UserData;
 import data.Warehouse;
@@ -914,6 +915,7 @@ public class Main extends Application {
 		UserData.Wareadmin=new ArrayList<WarehouseAdministrator>();
 		Warehouse.Wares=new ArrayList<Warehouse>();
 		Warehouse.Waress=new ArrayList<String>();
+		SuperSuper.Wares=new ArrayList<Warehouse>();
 		Su=new SuperUser("admin","pass");
 		UserData.Superusers.add(Su);
 		launch(args);

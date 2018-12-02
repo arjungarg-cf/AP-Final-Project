@@ -31,7 +31,7 @@ public class SuperUser extends SuperSuper {
 	{
 		WarehouseAdministrator A=null;
 		for (int i = 0; i < UserData.Wareadmin.size(); i++) {
-			if(UserData.Wareadmin.get(i).getname().equals(wadmin))
+			if(UserData.Wareadmin.get(i).getid().equals(wadmin))
 			{
 				A=UserData.Wareadmin.get(i);
 				break;
@@ -136,10 +136,19 @@ public class SuperUser extends SuperSuper {
 	
 	
 	
-	public void CreateStoreAdmin(Warehouse w,int max,String lid,String pass)
+	public boolean CreateStoreAdmin(String wa,int max,String lid,String pass)
 	{
+		Warehouse w=null;
+		for(int i=0;i<SuperSuper.Wares.size();i++)
+		{
+			if(SuperSuper.Wares.get(i).getname().equals(wa))
+				w=SuperSuper.Wares.get(i);
+		}
+		if(w==null)
+			return false;
 		StoreAdministrator s=new StoreAdministrator(null, null, w, max, lid, pass);
 		UserData.Storeadmin.add(s);
+		return true;
 	}
 	
 }

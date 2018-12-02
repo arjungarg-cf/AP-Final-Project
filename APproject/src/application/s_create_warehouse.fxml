@@ -52,7 +52,7 @@
                               <Label text="Administrator" GridPane.rowIndex="2" />
                               <TextField fx:id="id" opacity="0.4" promptText="ID of the warehouse" GridPane.columnIndex="1" />
                               <TextField fx:id="name" opacity="0.52" promptText="Name of the warehouse" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <TextField fx:id="admin" opacity="0.57" promptText="Warehouse Administrator" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="admin" opacity="0.57" promptText="Id of Warehouse Administrator" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                            <padding>
                               <Insets top="10.0" />
