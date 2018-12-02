@@ -8,6 +8,7 @@ import application.Main;
 public class super_user_create_store_controller {
 	private Main ma;
 	@FXML private javafx.scene.control.Button Back;
+	
 	@FXML
 	private void gobacktoprev() throws IOException
 	{

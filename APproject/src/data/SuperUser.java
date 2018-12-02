@@ -2,6 +2,10 @@ package data;
 
 import java.util.ArrayList;
 
+import javax.jws.soap.SOAPBinding.Use;
+
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion.User;
+
 public class SuperUser extends SuperSuper {
 	
 	private String LoginID,Password;
@@ -29,13 +33,22 @@ public class SuperUser extends SuperSuper {
 		A.setAdmin(A);
 	}
 
-	public void CreateStore(StoreAdministrator A,String id,Warehouse w,String n,int m) {
+	public boolean CreateStore(String b,String id,Warehouse w,String n,int m) {
+		StoreAdministrator A=null;
+		for(int i=0;i<UserData.Storeadmin.size();i++)
+		{
+			if(UserData.Storeadmin.get(i).getname().equals(b))
+				A=UserData.Storeadmin.get(i);
+		}
+		if(A==null)
+			return false;
 		Store S=new Store(id, n, w, m);
 		A.setAdmin(A);
 		A.setStore(S);
 		Stores.add(S);
 		Store.Stores.add(S);
 		Store.Storess.add(S.getname());
+		return true;
 		
 	}
 	
@@ -83,8 +96,6 @@ public class SuperUser extends SuperSuper {
 		UserData.Wareadmin.add(W);
 		
 	}
-	
-	
 	
 	
 	

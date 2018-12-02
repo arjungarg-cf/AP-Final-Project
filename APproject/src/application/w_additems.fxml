@@ -127,7 +127,7 @@
                               <TextField fx:id="page3_item" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <Button layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
+                        <Button fx:id="create3" layoutX="727.0" layoutY="229.0" mnemonicParsing="false" text="Create" />
                      </children>
                   </AnchorPane>
               </content>
