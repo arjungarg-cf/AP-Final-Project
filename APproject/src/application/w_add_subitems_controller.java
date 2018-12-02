@@ -28,6 +28,9 @@ private Main ma;
 //	{
 //		ma.go_back_to_welcome();
 //	}
+
+boolean ifcan_make_or_not=false;
+boolean ifcan_make_or_not2=false;
 //
 	@FXML
 	private void goback() throws IOException
@@ -55,16 +58,16 @@ private Main ma;
 		if(ifcan_make_or_not2==false)
 			System.out.println("Cannot make");
 		else
-			ma.go_add_subitems_store();
+			ma.go_add_subitems();
 	}
 	@FXML
 	private void create_item() throws IOException
 	{
-		String s=dropbox3.getText();
-		String s2=dropbox4.getText();
-		String s3=Item_page_item.getText();
-		float cost=Float.valueOf(Item_page_Cost.getText());
-		int quantity=Integer.parseInt(Item_page_Quantity.getText());
+		String s=page3_category.getText();
+		String s2=page3_subcate.getText();
+		String s3=page3_item.getText();
+		float cost=Float.valueOf(page3_cost.getText());
+		int quantity=Integer.parseInt(page3_quantity.getText());
 		ifcan_make_or_not2=Main.S.addItem(s, s2, s3, cost, quantity );
 		if(ifcan_make_or_not2==false)
 			System.out.println("Cannot make");
